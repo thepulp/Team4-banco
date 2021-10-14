@@ -119,7 +119,7 @@ public class Registro extends javax.swing.JFrame {
                 btn1ActionPerformed(evt);
             }
         });
-        jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 531, 60, 50));
+        jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 60, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
