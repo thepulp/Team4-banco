@@ -93,7 +93,7 @@ public class Home extends javax.swing.JFrame {
         nombreapp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/logo.png"))); // NOI18N
         jPanel1.add(nombreapp, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 210, 60));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 590));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 600));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
