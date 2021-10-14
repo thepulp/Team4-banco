@@ -71,11 +71,15 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         Titulo.setText("Ultimos Movimientos:");
         fondo.add(Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 21, 149, 28));
 
+        btnretiros.setBackground(new java.awt.Color(0, 0, 119));
+        btnretiros.setForeground(new java.awt.Color(255, 255, 255));
         btnretiros.setText("No.Retiros");
-        fondo.add(btnretiros, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 100, 40));
+        fondo.add(btnretiros, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 110, 40));
 
+        btndepositos.setBackground(new java.awt.Color(0, 0, 119));
+        btndepositos.setForeground(new java.awt.Color(255, 255, 255));
         btndepositos.setText("No.Depositos");
-        fondo.add(btndepositos, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 100, 40));
+        fondo.add(btndepositos, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 110, 40));
 
         Numeros.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Numeros.setForeground(new java.awt.Color(1, 0, 39));
