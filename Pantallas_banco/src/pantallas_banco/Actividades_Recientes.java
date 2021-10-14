@@ -16,6 +16,8 @@ public class Actividades_Recientes extends javax.swing.JFrame {
      */
     public Actividades_Recientes() {
         initComponents();
+        setLocationRelativeTo(null);
+        setResizable(false);
     }
 
     /**
@@ -32,6 +34,9 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         lista = new javax.swing.JList<>();
         Titulo = new javax.swing.JLabel();
+        btnretiros = new javax.swing.JButton();
+        btndepositos = new javax.swing.JButton();
+        Numeros = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,12 +64,23 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(lista);
 
-        fondo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 55, 320, 480));
+        fondo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 310, 300));
 
         Titulo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Titulo.setForeground(new java.awt.Color(1, 0, 39));
         Titulo.setText("Ultimos Movimientos:");
         fondo.add(Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 21, 149, 28));
+
+        btnretiros.setText("No.Retiros");
+        fondo.add(btnretiros, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 100, 40));
+
+        btndepositos.setText("No.Depositos");
+        fondo.add(btndepositos, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 100, 40));
+
+        Numeros.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        Numeros.setForeground(new java.awt.Color(1, 0, 39));
+        Numeros.setText("No.");
+        fondo.add(Numeros, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 60, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -120,8 +136,11 @@ public class Actividades_Recientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Numeros;
     private javax.swing.JLabel Titulo;
     private javax.swing.JButton btn1;
+    private javax.swing.JButton btndepositos;
+    private javax.swing.JButton btnretiros;
     private javax.swing.JPanel fondo;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JList<String> lista;
