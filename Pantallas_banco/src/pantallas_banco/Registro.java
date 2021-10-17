@@ -5,6 +5,10 @@
  */
 package pantallas_banco;
 
+import Clases.Lista_Usuario;
+import Clases.Usuario;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author fvarg
@@ -35,12 +39,12 @@ public class Registro extends javax.swing.JFrame {
         pass1 = new javax.swing.JPasswordField();
         viewpass = new javax.swing.JTextField();
         viewpass1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        JBRegistrarse = new javax.swing.JButton();
         viewusu = new javax.swing.JTextField();
         email = new javax.swing.JTextField();
         usuario1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        btn1 = new javax.swing.JButton();
+        btnGoback = new javax.swing.JButton();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -74,20 +78,20 @@ public class Registro extends javax.swing.JFrame {
         viewpass1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(viewpass1, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 253, 234, 31));
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(106, 46, 205));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/agregar-simbolo-de-usuario.png"))); // NOI18N
-        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setFocusPainted(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        JBRegistrarse.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        JBRegistrarse.setForeground(new java.awt.Color(106, 46, 205));
+        JBRegistrarse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/agregar-simbolo-de-usuario.png"))); // NOI18N
+        JBRegistrarse.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        JBRegistrarse.setBorderPainted(false);
+        JBRegistrarse.setContentAreaFilled(false);
+        JBRegistrarse.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        JBRegistrarse.setFocusPainted(false);
+        JBRegistrarse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                JBRegistrarseActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 230, 50));
+        jPanel1.add(JBRegistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 230, 50));
 
         viewusu.setEditable(false);
         viewusu.setBackground(new java.awt.Color(0, 0, 119));
@@ -111,15 +115,15 @@ public class Registro extends javax.swing.JFrame {
         jLabel1.setText("Registro");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 44, 250, 40));
 
-        btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
-        btn1.setBorderPainted(false);
-        btn1.setContentAreaFilled(false);
-        btn1.addActionListener(new java.awt.event.ActionListener() {
+        btnGoback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
+        btnGoback.setBorderPainted(false);
+        btnGoback.setContentAreaFilled(false);
+        btnGoback.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn1ActionPerformed(evt);
+                btnGobackActionPerformed(evt);
             }
         });
-        jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 60, 50));
+        jPanel1.add(btnGoback, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 60, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -135,17 +139,40 @@ public class Registro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn1ActionPerformed
+    private void JBRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBRegistrarseActionPerformed
+        String usuario = usuario1.getText();
+        String Contraseña = pass1.getText();
+        String Correo = email.getText();
+        Usuario obj = new Usuario();
+        if(Usuario.verificarUsuarioNuevo(usuario) == -1){
+    
+        obj.setNombre(usuario);
+        obj.setContraseña(Contraseña);
+        obj.setEmail(Correo);
+        Lista_Usuario.agregar(obj);
+        
+        JOptionPane.showMessageDialog(this, "Nuevo usuario fue registrado exitosamente ");
+        }
+        else {
+            
+            JOptionPane.showMessageDialog(this, "Usuario ya esta siendo usado");
+                    }
+        //Mata ha estado aqui
+    }//GEN-LAST:event_JBRegistrarseActionPerformed
+    
+    private void btnGobackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGobackActionPerformed
+        Inicio_de_sesion abrir = new Inicio_de_sesion();
+        abrir.setVisible(true);
+        this.dispose();
+        //Mata ha estado aqui
+    }//GEN-LAST:event_btnGobackActionPerformed
 
     /**
      * @param args the command line arguments
      */
+    //Al final del proyecto tendremos que elimar el main para que solo sea posible
+    //ser visto en la clase main de Inicio 
+    // pero mientras estamos en alpha lo mantenemos asi
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -179,9 +206,9 @@ public class Registro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn1;
+    private javax.swing.JButton JBRegistrarse;
+    private javax.swing.JButton btnGoback;
     private javax.swing.JTextField email;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;

@@ -5,6 +5,9 @@
  */
 package pantallas_banco;
 
+import Clases.Usuario;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author fvarg
@@ -40,6 +43,7 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         usuario = new javax.swing.JTextField();
         crearcuenta = new javax.swing.JLabel();
         crearcuenta1 = new javax.swing.JLabel();
+        jBCrearCuenta = new javax.swing.JButton();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -106,6 +110,14 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         crearcuenta1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel1.add(crearcuenta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 240, 20));
 
+        jBCrearCuenta.setText("Crear cuenta");
+        jBCrearCuenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBCrearCuentaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jBCrearCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 520, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -121,12 +133,28 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btninicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btninicioActionPerformed
-        // TODO add your handling code here:
+        String nUsuario = usuario.getText();
+        String nContraseña = pass.getText();
+        int posicion = Usuario.verificarLogin(nUsuario, nContraseña);
+        if (posicion == -1) {
+            JOptionPane.showMessageDialog(this, "La contraseña o Usuario son incorrectos");
+        } else {
+            Home abrir = new Home();
+            abrir.setVisible(true);
+            this.dispose();
+        }
     }//GEN-LAST:event_btninicioActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void jBCrearCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCrearCuentaActionPerformed
+        Registro abrir = new Registro();
+        abrir.setVisible(true);
+        this.dispose();
+        //Mata estuvo aqui 
+    }//GEN-LAST:event_jBCrearCuentaActionPerformed
+
+    //Al final del proyecto tendremos que elimar el main para que solo sea posible
+    //ser visto en la clase main de Inicio 
+    // pero mientras estamos en alpha lo mantemos asi
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -163,6 +191,7 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
     private javax.swing.JButton btninicio;
     private javax.swing.JLabel crearcuenta;
     private javax.swing.JLabel crearcuenta1;
+    private javax.swing.JButton jBCrearCuenta;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel1;
