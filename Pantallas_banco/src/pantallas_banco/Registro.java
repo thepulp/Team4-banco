@@ -57,7 +57,6 @@ public class Registro extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pass1.setFont(new java.awt.Font("Trebuchet MS", 1, 11)); // NOI18N
-        pass1.setText("jPasswordField1");
         jPanel1.add(pass1, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 302, 234, 31));
 
         viewpass.setEditable(false);

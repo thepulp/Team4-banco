@@ -50,6 +50,11 @@ public class Home extends javax.swing.JFrame {
         btnsalir.setBorderPainted(false);
         btnsalir.setContentAreaFilled(false);
         btnsalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnsalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsalirActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 530, 350, -1));
 
         btnactividadesrecientes.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
@@ -73,6 +78,11 @@ public class Home extends javax.swing.JFrame {
         btninfocuenta.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(106, 46, 205)));
         btninfocuenta.setContentAreaFilled(false);
         btninfocuenta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btninfocuenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btninfocuentaActionPerformed(evt);
+            }
+        });
         jPanel1.add(btninfocuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 120, 60));
 
         btntransferir.setBackground(new java.awt.Color(255, 255, 255));
@@ -97,6 +107,18 @@ public class Home extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
+        Inicio_de_sesion abrir = new Inicio_de_sesion();
+        abrir.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnsalirActionPerformed
+
+    private void btninfocuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btninfocuentaActionPerformed
+        Detalles_de_la_cuenta abrir = new Detalles_de_la_cuenta();
+        abrir.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btninfocuentaActionPerformed
 
     /**
      * @param args the command line arguments
