@@ -38,39 +38,41 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         varnumero = new javax.swing.JLabel();
         vardireccion = new javax.swing.JLabel();
         varnacionalidad = new javax.swing.JLabel();
-        btn1 = new javax.swing.JButton();
+        btn_configuracion = new javax.swing.JButton();
+        btn_regreso = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(159, 100, 216));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
         jPanel1.setForeground(new java.awt.Color(159, 100, 216));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        titulo.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        titulo.setFont(new java.awt.Font("Comfortaa Light", 1, 24)); // NOI18N
         titulo.setForeground(new java.awt.Color(1, 0, 39));
         titulo.setText("Detalles de la cuenta:");
-        jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
+        jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
 
         contenedor.setBackground(new java.awt.Color(106, 46, 205));
         contenedor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
-        varnombre.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        varnombre.setFont(new java.awt.Font("Comfortaa Light", 1, 12)); // NOI18N
         varnombre.setText("Nombre:");
 
-        varfecha.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        varfecha.setFont(new java.awt.Font("Comfortaa Light", 1, 12)); // NOI18N
         varfecha.setText("Fecha:");
 
-        varcorreo.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        varcorreo.setFont(new java.awt.Font("Comfortaa Light", 1, 12)); // NOI18N
         varcorreo.setText("Correo:");
 
-        varnumero.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        varnumero.setFont(new java.awt.Font("Comfortaa Light", 1, 12)); // NOI18N
         varnumero.setText("Numero:");
 
-        vardireccion.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        vardireccion.setFont(new java.awt.Font("Comfortaa Light", 1, 12)); // NOI18N
         vardireccion.setText("Direccion:");
 
-        varnacionalidad.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        varnacionalidad.setFont(new java.awt.Font("Comfortaa Light", 1, 12)); // NOI18N
         varnacionalidad.setText("Nacionalidad:");
 
         javax.swing.GroupLayout contenedorLayout = new javax.swing.GroupLayout(contenedor);
@@ -108,15 +110,27 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
 
         jPanel1.add(contenedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 310, 230));
 
-        btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
-        btn1.setBorderPainted(false);
-        btn1.setContentAreaFilled(false);
-        btn1.addActionListener(new java.awt.event.ActionListener() {
+        btn_configuracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/configuracion-gear.png"))); // NOI18N
+        btn_configuracion.setBorderPainted(false);
+        btn_configuracion.setContentAreaFilled(false);
+        btn_configuracion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_configuracion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn1ActionPerformed(evt);
+                btn_configuracionActionPerformed(evt);
             }
         });
-        jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 60, 50));
+        jPanel1.add(btn_configuracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 530, 60, 50));
+
+        btn_regreso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
+        btn_regreso.setBorderPainted(false);
+        btn_regreso.setContentAreaFilled(false);
+        btn_regreso.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_regreso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_regresoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_regreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 60, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -132,14 +146,18 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+    private void btn_configuracionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_configuracionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn1ActionPerformed
+    }//GEN-LAST:event_btn_configuracionActionPerformed
+
+    private void btn_regresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_regresoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_regresoActionPerformed
 
     public void transparenciaButton(){
-    btn1.setOpaque(false);
-    btn1.setContentAreaFilled(false);;
-    btn1.setBorderPainted(false);
+    btn_configuracion.setOpaque(false);
+    btn_configuracion.setContentAreaFilled(false);;
+    btn_configuracion.setBorderPainted(false);
     
     }
     /**
@@ -168,6 +186,9 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Detalles_de_la_cuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -178,7 +199,8 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn_configuracion;
+    private javax.swing.JButton btn_regreso;
     private javax.swing.JPanel contenedor;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel titulo;

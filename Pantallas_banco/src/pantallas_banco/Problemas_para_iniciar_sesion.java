@@ -39,18 +39,19 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
         btncontraseña = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         fondo.setBackground(new java.awt.Color(159, 100, 216));
         fondo.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
 
-        titulo.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        titulo.setFont(new java.awt.Font("Comfortaa", 1, 18)); // NOI18N
         titulo.setForeground(new java.awt.Color(1, 0, 39));
         titulo.setText("Recuperar contraseña");
 
         contenedor.setBackground(new java.awt.Color(106, 46, 205));
         contenedor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
-        intruccion.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        intruccion.setFont(new java.awt.Font("Comfortaa", 1, 10)); // NOI18N
         intruccion.setForeground(new java.awt.Color(1, 0, 39));
         intruccion.setText("Ingresa el correo electrónico asociado a la cuenta.");
 
@@ -61,7 +62,7 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, contenedorLayout.createSequentialGroup()
                 .addContainerGap(22, Short.MAX_VALUE)
                 .addGroup(contenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(intruccion, javax.swing.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)
+                    .addComponent(intruccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(varcorreo))
                 .addGap(19, 19, 19))
         );
@@ -78,6 +79,7 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btn1.setBorderPainted(false);
         btn1.setContentAreaFilled(false);
+        btn1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);
@@ -87,6 +89,7 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
         btncontraseña.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/candado.png"))); // NOI18N
         btncontraseña.setBorderPainted(false);
         btncontraseña.setContentAreaFilled(false);
+        btncontraseña.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout fondoLayout = new javax.swing.GroupLayout(fondo);
         fondo.setLayout(fondoLayout);
@@ -95,9 +98,6 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
             .addGroup(fondoLayout.createSequentialGroup()
                 .addGroup(fondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(fondoLayout.createSequentialGroup()
-                        .addGap(57, 57, 57)
-                        .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(fondoLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(contenedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(fondoLayout.createSequentialGroup()
@@ -105,7 +105,10 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
                         .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(fondoLayout.createSequentialGroup()
                         .addGap(63, 63, 63)
-                        .addComponent(btncontraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btncontraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(fondoLayout.createSequentialGroup()
+                        .addGap(57, 57, 57)
+                        .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         fondoLayout.setVerticalGroup(
@@ -165,6 +168,9 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Problemas_para_iniciar_sesion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */

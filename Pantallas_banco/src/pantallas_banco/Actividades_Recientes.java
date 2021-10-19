@@ -64,7 +64,7 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(lista);
 
-        fondo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 310, 300));
+        fondo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 310, 300));
 
         Titulo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Titulo.setForeground(new java.awt.Color(1, 0, 39));

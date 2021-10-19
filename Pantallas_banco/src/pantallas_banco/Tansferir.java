@@ -45,15 +45,19 @@ public class Tansferir extends javax.swing.JFrame {
         boxbanorte = new javax.swing.JRadioButton();
         txtcantidad = new javax.swing.JLabel();
         cantidad = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(159, 100, 216));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
+        jPanel1.setForeground(new java.awt.Color(1, 0, 39));
 
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btn1.setBorderPainted(false);
         btn1.setContentAreaFilled(false);
+        btn1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);
@@ -61,28 +65,38 @@ public class Tansferir extends javax.swing.JFrame {
         });
 
         titulo.setBackground(new java.awt.Color(1, 0, 39));
-        titulo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        titulo.setFont(new java.awt.Font("Comfortaa Light", 1, 14)); // NOI18N
+        titulo.setForeground(new java.awt.Color(1, 0, 39));
         titulo.setText("Depositar por transferencia");
 
+        instruccion.setFont(new java.awt.Font("Comfortaa Light", 0, 9)); // NOI18N
         instruccion.setText("Rellena los siguientes cuadros de informacion para completar.");
 
-        txtbeneficiario.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtbeneficiario.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        txtbeneficiario.setForeground(new java.awt.Color(1, 0, 39));
         txtbeneficiario.setText("Beneficiario:");
 
-        txtnumero.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtnumero.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        txtnumero.setForeground(new java.awt.Color(1, 0, 39));
         txtnumero.setText("Numero de tarjeta:");
 
-        txtdestino.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtdestino.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
         txtdestino.setText("Banco Destinatario:");
 
         Grupo_Box.add(boxbbva);
+        boxbbva.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
         boxbbva.setText("BBVA");
+        boxbbva.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         Grupo_Box.add(boxbanamex);
+        boxbanamex.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
         boxbanamex.setText("Banamex");
+        boxbanamex.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         Grupo_Box.add(boxsantander);
+        boxsantander.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
         boxsantander.setText("Santander");
+        boxsantander.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         boxsantander.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boxsantanderActionPerformed(evt);
@@ -90,10 +104,19 @@ public class Tansferir extends javax.swing.JFrame {
         });
 
         Grupo_Box.add(boxbanorte);
+        boxbanorte.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
         boxbanorte.setText("Banorte");
+        boxbanorte.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        txtcantidad.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtcantidad.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        txtcantidad.setForeground(new java.awt.Color(1, 0, 39));
         txtcantidad.setText("Cantidad:");
+
+        jButton1.setBackground(new java.awt.Color(0, 0, 119));
+        jButton1.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Completar Transferencia");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -101,6 +124,9 @@ public class Tansferir extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(35, 35, 35)
                         .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -115,15 +141,16 @@ public class Tansferir extends javax.swing.JFrame {
                             .addComponent(txtdestino)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(boxsantander, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
+                                    .addComponent(boxsantander, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(boxbbva, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(45, 45, 45)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(boxbanorte, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(boxbanamex, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(txtcantidad)
-                            .addComponent(cantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cantidad, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)))))
                 .addContainerGap(19, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -137,17 +164,17 @@ public class Tansferir extends javax.swing.JFrame {
                 .addComponent(txtbeneficiario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(beneficiario, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(25, 25, 25)
                 .addComponent(txtnumero)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(beneficiario1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(txtcantidad)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addComponent(txtdestino)
                 .addGap(18, 18, 18)
+                .addComponent(txtdestino)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(boxbbva)
                     .addComponent(boxbanamex))
@@ -155,8 +182,11 @@ public class Tansferir extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(boxsantander)
                     .addComponent(boxbanorte))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
-                .addComponent(btn1))
+                .addGap(18, 18, 18)
+                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn1)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -207,6 +237,9 @@ public class Tansferir extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Tansferir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -227,6 +260,7 @@ public class Tansferir extends javax.swing.JFrame {
     private javax.swing.JButton btn1;
     private javax.swing.JTextField cantidad;
     private javax.swing.JLabel instruccion;
+    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel txtbeneficiario;

@@ -51,17 +51,23 @@ public class Registro extends javax.swing.JFrame {
         jMenuItem2.setText("jMenuItem2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(159, 100, 216));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pass1.setFont(new java.awt.Font("Trebuchet MS", 1, 11)); // NOI18N
+        pass1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pass1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(pass1, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 302, 234, 31));
 
         viewpass.setEditable(false);
         viewpass.setBackground(new java.awt.Color(0, 0, 119));
-        viewpass.setFont(new java.awt.Font("Trebuchet MS", 1, 11)); // NOI18N
+        viewpass.setFont(new java.awt.Font("Comfortaa", 1, 11)); // NOI18N
         viewpass.setForeground(new java.awt.Color(255, 255, 255));
         viewpass.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewpass.setText("Email");
@@ -70,7 +76,7 @@ public class Registro extends javax.swing.JFrame {
 
         viewpass1.setEditable(false);
         viewpass1.setBackground(new java.awt.Color(0, 0, 119));
-        viewpass1.setFont(new java.awt.Font("Trebuchet MS", 1, 11)); // NOI18N
+        viewpass1.setFont(new java.awt.Font("Comfortaa", 1, 11)); // NOI18N
         viewpass1.setForeground(new java.awt.Color(255, 255, 255));
         viewpass1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewpass1.setText("Contraseña");
@@ -94,7 +100,7 @@ public class Registro extends javax.swing.JFrame {
 
         viewusu.setEditable(false);
         viewusu.setBackground(new java.awt.Color(0, 0, 119));
-        viewusu.setFont(new java.awt.Font("Trebuchet MS", 1, 11)); // NOI18N
+        viewusu.setFont(new java.awt.Font("Comfortaa", 1, 11)); // NOI18N
         viewusu.setForeground(new java.awt.Color(255, 255, 255));
         viewusu.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewusu.setText("Usuario");
@@ -108,7 +114,7 @@ public class Registro extends javax.swing.JFrame {
         usuario1.setFont(new java.awt.Font("Trebuchet MS", 1, 11)); // NOI18N
         jPanel1.add(usuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 192, 234, 28));
 
-        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Comfortaa Light", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(1, 0, 39));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Registro");
@@ -117,12 +123,13 @@ public class Registro extends javax.swing.JFrame {
         btnGoback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btnGoback.setBorderPainted(false);
         btnGoback.setContentAreaFilled(false);
+        btnGoback.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnGoback.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGobackActionPerformed(evt);
             }
         });
-        jPanel1.add(btnGoback, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 60, 50));
+        jPanel1.add(btnGoback, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 531, 60, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -139,7 +146,7 @@ public class Registro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void JBRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBRegistrarseActionPerformed
-        String usuario = usuario1.getText();
+      String usuario = usuario1.getText();
         String Contraseña = pass1.getText();
         String Correo = email.getText();
         Usuario obj = new Usuario();
@@ -158,7 +165,7 @@ public class Registro extends javax.swing.JFrame {
                     }
         //Mata ha estado aqui
     }//GEN-LAST:event_JBRegistrarseActionPerformed
-    
+
     private void btnGobackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGobackActionPerformed
         Inicio_de_sesion abrir = new Inicio_de_sesion();
         abrir.setVisible(true);
@@ -166,12 +173,13 @@ public class Registro extends javax.swing.JFrame {
         //Mata ha estado aqui
     }//GEN-LAST:event_btnGobackActionPerformed
 
+    private void pass1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pass1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pass1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
-    //Al final del proyecto tendremos que elimar el main para que solo sea posible
-    //ser visto en la clase main de Inicio 
-    // pero mientras estamos en alpha lo mantenemos asi
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
