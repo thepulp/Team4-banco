@@ -40,6 +40,7 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         varnacionalidad = new javax.swing.JLabel();
         btn_configuracion = new javax.swing.JButton();
         btn_regreso = new javax.swing.JButton();
+        imgfondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -132,11 +133,14 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         });
         jPanel1.add(btn_regreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 60, 50));
 
+        imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
+        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 50, 380, 540));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -202,6 +206,7 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
     private javax.swing.JButton btn_configuracion;
     private javax.swing.JButton btn_regreso;
     private javax.swing.JPanel contenedor;
+    private javax.swing.JLabel imgfondo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel varcorreo;

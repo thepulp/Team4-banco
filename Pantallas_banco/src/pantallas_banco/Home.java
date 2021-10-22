@@ -40,6 +40,7 @@ public class Home extends javax.swing.JFrame {
         textobtn3 = new javax.swing.JLabel();
         textobtn4 = new javax.swing.JLabel();
         textobtn1 = new javax.swing.JLabel();
+        imgfondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -135,7 +136,10 @@ public class Home extends javax.swing.JFrame {
         textobtn1.setText("Informacion cuenta");
         jPanel1.add(textobtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 140, 20));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 590));
+        imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
+        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, -30, 380, 590));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 600));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -208,6 +212,7 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnsalir;
+    private javax.swing.JLabel imgfondo;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;

@@ -73,7 +73,7 @@
                   <Component id="contenedor1" min="-2" pref="100" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="contenedor2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="15" max="32767" attributes="0"/>
+                  <EmptySpace pref="10" max="32767" attributes="0"/>
                   <Component id="btn1" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>

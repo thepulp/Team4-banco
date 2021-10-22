@@ -45,6 +45,7 @@ public class Registro extends javax.swing.JFrame {
         usuario1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         btnGoback = new javax.swing.JButton();
+        imgfondo = new javax.swing.JLabel();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -131,11 +132,14 @@ public class Registro extends javax.swing.JFrame {
         });
         jPanel1.add(btnGoback, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 531, 60, 50));
 
+        imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
+        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 0, 380, 590));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -216,6 +220,7 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JButton JBRegistrarse;
     private javax.swing.JButton btnGoback;
     private javax.swing.JTextField email;
+    private javax.swing.JLabel imgfondo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;

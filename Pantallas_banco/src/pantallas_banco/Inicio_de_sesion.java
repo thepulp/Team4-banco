@@ -43,6 +43,7 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         usuario = new javax.swing.JTextField();
         crearcuenta = new javax.swing.JLabel();
         crearcuenta1 = new javax.swing.JLabel();
+        imgfondo = new javax.swing.JLabel();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -96,15 +97,16 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         usuario.setFont(new java.awt.Font("Trebuchet MS", 1, 11)); // NOI18N
         jPanel1.add(usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 192, 234, 28));
 
+        crearcuenta.setBackground(new java.awt.Color(255, 255, 255));
         crearcuenta.setFont(new java.awt.Font("Comfortaa", 1, 12)); // NOI18N
-        crearcuenta.setForeground(new java.awt.Color(106, 46, 205));
+        crearcuenta.setForeground(new java.awt.Color(255, 255, 255));
         crearcuenta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         crearcuenta.setText("¿Olvidaste tu contraseña?");
         crearcuenta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel1.add(crearcuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 240, 20));
 
         crearcuenta1.setFont(new java.awt.Font("Comfortaa", 1, 12)); // NOI18N
-        crearcuenta1.setForeground(new java.awt.Color(106, 46, 205));
+        crearcuenta1.setForeground(new java.awt.Color(255, 255, 255));
         crearcuenta1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         crearcuenta1.setText("Crear Cuenta");
         crearcuenta1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -115,15 +117,18 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         });
         jPanel1.add(crearcuenta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 240, 20));
 
+        imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
+        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 0, 380, 590));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -190,6 +195,7 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
     private javax.swing.JButton btninicio;
     private javax.swing.JLabel crearcuenta;
     private javax.swing.JLabel crearcuenta1;
+    private javax.swing.JLabel imgfondo;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel1;

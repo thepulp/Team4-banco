@@ -53,6 +53,7 @@ public class Tansferir extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(159, 100, 216));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
         jPanel1.setForeground(new java.awt.Color(1, 0, 39));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btn1.setBorderPainted(false);
@@ -63,35 +64,45 @@ public class Tansferir extends javax.swing.JFrame {
                 btn1ActionPerformed(evt);
             }
         });
+        jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 528, 70, -1));
 
         titulo.setBackground(new java.awt.Color(1, 0, 39));
         titulo.setFont(new java.awt.Font("Comfortaa Light", 1, 14)); // NOI18N
         titulo.setForeground(new java.awt.Color(1, 0, 39));
         titulo.setText("Depositar por transferencia");
+        jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 21, 277, 42));
 
         instruccion.setFont(new java.awt.Font("Comfortaa Light", 0, 9)); // NOI18N
         instruccion.setText("Rellena los siguientes cuadros de informacion para completar.");
+        jPanel1.add(instruccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 74, 303, 48));
 
         txtbeneficiario.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
         txtbeneficiario.setForeground(new java.awt.Color(1, 0, 39));
         txtbeneficiario.setText("Beneficiario:");
+        jPanel1.add(txtbeneficiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 128, -1, -1));
+        jPanel1.add(beneficiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 147, 273, 39));
 
         txtnumero.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
         txtnumero.setForeground(new java.awt.Color(1, 0, 39));
         txtnumero.setText("Numero de tarjeta:");
+        jPanel1.add(txtnumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 211, -1, -1));
+        jPanel1.add(beneficiario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 235, 273, 39));
 
         txtdestino.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
         txtdestino.setText("Banco Destinatario:");
+        jPanel1.add(txtdestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 373, -1, -1));
 
         Grupo_Box.add(boxbbva);
         boxbbva.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
         boxbbva.setText("BBVA");
         boxbbva.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(boxbbva, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 393, 85, -1));
 
         Grupo_Box.add(boxbanamex);
         boxbanamex.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
         boxbanamex.setText("Banamex");
         boxbanamex.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(boxbanamex, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 393, 80, -1));
 
         Grupo_Box.add(boxsantander);
         boxsantander.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
@@ -102,92 +113,26 @@ public class Tansferir extends javax.swing.JFrame {
                 boxsantanderActionPerformed(evt);
             }
         });
+        jPanel1.add(boxsantander, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 432, -1, -1));
 
         Grupo_Box.add(boxbanorte);
         boxbanorte.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
         boxbanorte.setText("Banorte");
         boxbanorte.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(boxbanorte, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 432, 80, -1));
 
         txtcantidad.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
         txtcantidad.setForeground(new java.awt.Color(1, 0, 39));
         txtcantidad.setText("Cantidad:");
+        jPanel1.add(txtcantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 292, -1, -1));
+        jPanel1.add(cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 316, 273, 39));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 119));
         jButton1.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Completar Transferencia");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtbeneficiario)
-                            .addComponent(instruccion, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(beneficiario, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtnumero)
-                            .addComponent(beneficiario1, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtdestino)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(boxsantander, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(boxbbva, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(45, 45, 45)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(boxbanorte, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(boxbanamex, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(txtcantidad)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(cantidad, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)))))
-                .addContainerGap(19, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(instruccion, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtbeneficiario)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(beneficiario, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25)
-                .addComponent(txtnumero)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(beneficiario1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(txtcantidad)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(cantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(txtdestino)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(boxbbva)
-                    .addComponent(boxbanamex))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(boxsantander)
-                    .addComponent(boxbanorte))
-                .addGap(18, 18, 18)
-                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btn1)
-                .addContainerGap())
-        );
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 471, 273, 51));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

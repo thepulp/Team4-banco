@@ -37,16 +37,19 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
         varcorreo = new javax.swing.JTextField();
         btn1 = new javax.swing.JButton();
         btncontraseña = new javax.swing.JButton();
+        imgfondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         fondo.setBackground(new java.awt.Color(159, 100, 216));
         fondo.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
+        fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         titulo.setFont(new java.awt.Font("Comfortaa", 1, 18)); // NOI18N
         titulo.setForeground(new java.awt.Color(1, 0, 39));
         titulo.setText("Recuperar contraseña");
+        fondo.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 39, 230, 36));
 
         contenedor.setBackground(new java.awt.Color(106, 46, 205));
         contenedor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
@@ -76,6 +79,8 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
                 .addContainerGap(87, Short.MAX_VALUE))
         );
 
+        fondo.add(contenedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 93, -1, -1));
+
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btn1.setBorderPainted(false);
         btn1.setContentAreaFilled(false);
@@ -85,45 +90,16 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
                 btn1ActionPerformed(evt);
             }
         });
+        fondo.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 528, 70, -1));
 
         btncontraseña.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/candado.png"))); // NOI18N
         btncontraseña.setBorderPainted(false);
         btncontraseña.setContentAreaFilled(false);
         btncontraseña.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fondo.add(btncontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 460, 200, -1));
 
-        javax.swing.GroupLayout fondoLayout = new javax.swing.GroupLayout(fondo);
-        fondo.setLayout(fondoLayout);
-        fondoLayout.setHorizontalGroup(
-            fondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fondoLayout.createSequentialGroup()
-                .addGroup(fondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(fondoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(contenedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(fondoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(fondoLayout.createSequentialGroup()
-                        .addGap(63, 63, 63)
-                        .addComponent(btncontraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(fondoLayout.createSequentialGroup()
-                        .addGap(57, 57, 57)
-                        .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        fondoLayout.setVerticalGroup(
-            fondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fondoLayout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(contenedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
-                .addComponent(btncontraseña)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
-                .addComponent(btn1)
-                .addContainerGap())
-        );
+        imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
+        fondo.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, -20, 380, 610));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -186,6 +162,7 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
     private javax.swing.JButton btncontraseña;
     private javax.swing.JPanel contenedor;
     private javax.swing.JPanel fondo;
+    private javax.swing.JLabel imgfondo;
     private javax.swing.JLabel intruccion;
     private javax.swing.JLabel titulo;
     private javax.swing.JTextField varcorreo;
