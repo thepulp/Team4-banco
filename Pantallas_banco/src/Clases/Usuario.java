@@ -16,7 +16,17 @@ public class Usuario {
     private String nombre;
     private String Contraseña;
     private String Email;
+    private int cuentaRegistrada;
+
     private static int contador = 0;
+
+    public int getNumero() {
+        return cuentaRegistrada;
+    }
+
+    public void setNumero(int numero) {
+        this.cuentaRegistrada = numero;
+    }
 
     public String getNombre() {
         return nombre;
@@ -82,7 +92,7 @@ public class Usuario {
         Usuario obj;
         for (int i = 0; i < lista.size(); i++) {
             obj = (Usuario) lista.elementAt(i);
-            if (obj.getNombre().equalsIgnoreCase(beneficiario)) {
+            if (obj.getNombre().equals(beneficiario)) {
                 return i;
             }
         }

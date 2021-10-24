@@ -19,9 +19,6 @@ public class Lista_Usuario {
         datos.addElement(obj);
     }
 
-    public static void buscar(Usuario posiicion) {
-        /*datos.get(posiicion);*/
-    }
 
     public static void Eliminar(int posicion) {
         datos.removeElementAt(posicion);

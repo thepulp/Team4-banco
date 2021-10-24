@@ -5,6 +5,8 @@
  */
 package pantallas_banco;
 
+import Clases.Cuenta;
+
 /**
  *
  * @author fvarg
@@ -50,6 +52,7 @@ public class Informacion_bancaria extends javax.swing.JFrame {
         Identificador_tarjeta2 = new javax.swing.JLabel();
         Identificador_tarjeta1 = new javax.swing.JLabel();
         btn1 = new javax.swing.JButton();
+        Enseñar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -184,6 +187,13 @@ public class Informacion_bancaria extends javax.swing.JFrame {
             }
         });
 
+        Enseñar.setText("Cuenta");
+        Enseñar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EnseñarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -196,7 +206,9 @@ public class Informacion_bancaria extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(btn1)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Enseñar)
+                .addGap(69, 69, 69))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -206,7 +218,9 @@ public class Informacion_bancaria extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(contenedor2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btn1))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btn1)
+                    .addComponent(Enseñar)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -228,6 +242,13 @@ public class Informacion_bancaria extends javax.swing.JFrame {
         abrir.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btn1ActionPerformed
+
+    private void EnseñarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnseñarActionPerformed
+        Cuenta Cuenta1;
+        Cuenta1 = new Cuenta(11111, 2500.70);
+        double totalCuenta = Cuenta1.saldo();
+        saldo1.setText(" " + totalCuenta);
+    }//GEN-LAST:event_EnseñarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -266,6 +287,7 @@ public class Informacion_bancaria extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Enseñar;
     private javax.swing.JLabel Identificador_tarjeta1;
     private javax.swing.JLabel Identificador_tarjeta2;
     private javax.swing.JLabel Identificador_tarjeta3;

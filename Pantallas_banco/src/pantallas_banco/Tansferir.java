@@ -6,6 +6,7 @@
 package pantallas_banco;
 
 import Clases.Usuario;
+import Clases.Cuenta;
 import javax.swing.JOptionPane;
 
 /**
@@ -38,17 +39,12 @@ public class Tansferir extends javax.swing.JFrame {
         titulo = new javax.swing.JLabel();
         instruccion = new javax.swing.JLabel();
         txtbeneficiario = new javax.swing.JLabel();
-        beneficiario = new javax.swing.JTextField();
+        beneficio = new javax.swing.JTextField();
         txtnumero = new javax.swing.JLabel();
         beneficiario1 = new javax.swing.JTextField();
-        txtdestino = new javax.swing.JLabel();
-        boxbbva = new javax.swing.JRadioButton();
-        boxbanamex = new javax.swing.JRadioButton();
-        boxsantander = new javax.swing.JRadioButton();
-        boxbanorte = new javax.swing.JRadioButton();
         txtcantidad = new javax.swing.JLabel();
         cantidad = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        TransferirBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -84,13 +80,13 @@ public class Tansferir extends javax.swing.JFrame {
         txtbeneficiario.setText("Beneficiario:");
         jPanel1.add(txtbeneficiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 128, -1, -1));
 
-        beneficiario.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
-        beneficiario.addActionListener(new java.awt.event.ActionListener() {
+        beneficio.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        beneficio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                beneficiarioActionPerformed(evt);
+                beneficioActionPerformed(evt);
             }
         });
-        jPanel1.add(beneficiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 147, 273, 39));
+        jPanel1.add(beneficio, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 147, 273, 39));
 
         txtnumero.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         txtnumero.setForeground(new java.awt.Color(1, 0, 39));
@@ -100,39 +96,6 @@ public class Tansferir extends javax.swing.JFrame {
         beneficiario1.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jPanel1.add(beneficiario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 235, 273, 39));
 
-        txtdestino.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
-        txtdestino.setText("Banco Destinatario:");
-        jPanel1.add(txtdestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 373, -1, -1));
-
-        Grupo_Box.add(boxbbva);
-        boxbbva.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
-        boxbbva.setText("BBVA");
-        boxbbva.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(boxbbva, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 393, 85, -1));
-
-        Grupo_Box.add(boxbanamex);
-        boxbanamex.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
-        boxbanamex.setText("Banamex");
-        boxbanamex.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(boxbanamex, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 393, 80, -1));
-
-        Grupo_Box.add(boxsantander);
-        boxsantander.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
-        boxsantander.setText("Santander");
-        boxsantander.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        boxsantander.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boxsantanderActionPerformed(evt);
-            }
-        });
-        jPanel1.add(boxsantander, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 432, -1, -1));
-
-        Grupo_Box.add(boxbanorte);
-        boxbanorte.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
-        boxbanorte.setText("Banorte");
-        boxbanorte.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(boxbanorte, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 432, 80, -1));
-
         txtcantidad.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         txtcantidad.setForeground(new java.awt.Color(1, 0, 39));
         txtcantidad.setText("Cantidad:");
@@ -141,17 +104,17 @@ public class Tansferir extends javax.swing.JFrame {
         cantidad.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jPanel1.add(cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 316, 273, 39));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 119));
-        jButton1.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Completar Transferencia");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        TransferirBtn.setBackground(new java.awt.Color(0, 0, 119));
+        TransferirBtn.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        TransferirBtn.setForeground(new java.awt.Color(255, 255, 255));
+        TransferirBtn.setText("Completar Transferencia");
+        TransferirBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        TransferirBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                TransferirBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 471, 273, 51));
+        jPanel1.add(TransferirBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 273, 51));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -173,28 +136,23 @@ public class Tansferir extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btn1ActionPerformed
 
-    private void boxsantanderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxsantanderActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_boxsantanderActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        /*
-        String nUsuario = beneficiario.getText();
-        int posicion = beneficiario.verificarTransicion(nUsuario);
+    private void TransferirBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TransferirBtnActionPerformed
+      /*
+        String nUsuario = beneficio.getText();
+        int posicion = Usuario.verificarTransicion(nUsuario);
         if (posicion == -1) {
             JOptionPane.showMessageDialog(this, "Beneficiario es incorrectos");
         } else {
-            Home abrir = new Home();
-            abrir.setVisible(true);
-            this.dispose();
+        depositar deposito = new depositar(cantidad.getText);  
+        JOptionPane.showMessageDialog(this, "Usuario ya esta siendo usado");
         }
     }      
-         */
-    }//GEN-LAST:event_jButton1ActionPerformed
+       */  
+    }//GEN-LAST:event_TransferirBtnActionPerformed
 
-    private void beneficiarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_beneficiarioActionPerformed
+    private void beneficioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_beneficioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_beneficiarioActionPerformed
+    }//GEN-LAST:event_beneficioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -236,21 +194,16 @@ public class Tansferir extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup Grupo_Box;
-    private javax.swing.JTextField beneficiario;
+    private javax.swing.JButton TransferirBtn;
     private javax.swing.JTextField beneficiario1;
-    private javax.swing.JRadioButton boxbanamex;
-    private javax.swing.JRadioButton boxbanorte;
-    private javax.swing.JRadioButton boxbbva;
-    private javax.swing.JRadioButton boxsantander;
+    private javax.swing.JTextField beneficio;
     private javax.swing.JButton btn1;
     private javax.swing.JTextField cantidad;
     private javax.swing.JLabel instruccion;
-    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel txtbeneficiario;
     private javax.swing.JLabel txtcantidad;
-    private javax.swing.JLabel txtdestino;
     private javax.swing.JLabel txtnumero;
     // End of variables declaration//GEN-END:variables
 }

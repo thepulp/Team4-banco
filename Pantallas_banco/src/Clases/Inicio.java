@@ -20,9 +20,9 @@ public class Inicio {
         // esto lo dejaremos al final para que el main abra el programa donde debe empezar
         // y no tengamos que abrir lo desde el frame 
         // ----------Codigo-----------------------------------
-        //   Inicio_de_sesion abrir = new Inicio_de_sesion();
-        // abrir.setVisible(true);
-        
+        Inicio_de_sesion abrir = new Inicio_de_sesion();
+        abrir.setVisible(true);
+
     }
 
 }
