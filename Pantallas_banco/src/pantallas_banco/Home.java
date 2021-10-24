@@ -32,7 +32,6 @@ public class Home extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         btnsalir = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        nombreapp = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -73,12 +72,6 @@ public class Home extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 150, 60));
-
-        nombreapp.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
-        nombreapp.setForeground(new java.awt.Color(0, 0, 120));
-        nombreapp.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        nombreapp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/logo.png"))); // NOI18N
-        jPanel1.add(nombreapp, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 210, 60));
 
         jButton2.setBackground(new java.awt.Color(0, 0, 119));
         jButton2.setFont(new java.awt.Font("Comfortaa", 0, 9)); // NOI18N
@@ -224,7 +217,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel nombreapp;
     private javax.swing.JLabel textobtn1;
     private javax.swing.JLabel textobtn2;
     private javax.swing.JLabel textobtn3;

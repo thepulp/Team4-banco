@@ -43,8 +43,8 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         vardireccion = new javax.swing.JLabel();
         varnacionalidad = new javax.swing.JLabel();
         btn_configuracion = new javax.swing.JButton();
-        imgfondo = new javax.swing.JLabel();
         btn_regreso = new javax.swing.JButton();
+        imgfondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -59,13 +59,16 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         titulo.setText("Detalles de la cuenta:");
         jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
 
+        Accion.setBackground(new java.awt.Color(0, 1, 119));
+        Accion.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        Accion.setForeground(new java.awt.Color(255, 255, 255));
         Accion.setText("Enseñar");
         Accion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AccionActionPerformed(evt);
             }
         });
-        jPanel1.add(Accion, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 400, -1, -1));
+        jPanel1.add(Accion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 310, 30));
 
         contenedor.setBackground(new java.awt.Color(106, 46, 205));
         contenedor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
@@ -134,9 +137,6 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         });
         jPanel1.add(btn_configuracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 530, 60, 50));
 
-        imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
-        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 50, 380, 530));
-
         btn_regreso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btn_regreso.setBorderPainted(false);
         btn_regreso.setContentAreaFilled(false);
@@ -147,6 +147,9 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btn_regreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 60, 50));
+
+        imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
+        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 50, 380, 530));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

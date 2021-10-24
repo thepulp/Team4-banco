@@ -50,6 +50,7 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btn1.setBorderPainted(false);
         btn1.setContentAreaFilled(false);
+        btn1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);
@@ -78,12 +79,14 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         btnretiros.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
         btnretiros.setForeground(new java.awt.Color(255, 255, 255));
         btnretiros.setText("No.Retiros");
+        btnretiros.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         fondo.add(btnretiros, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 110, 40));
 
         btndepositos.setBackground(new java.awt.Color(0, 0, 119));
         btndepositos.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
         btndepositos.setForeground(new java.awt.Color(255, 255, 255));
         btndepositos.setText("No.Depositos");
+        btndepositos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         fondo.add(btndepositos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 110, 40));
 
         Numeros.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N

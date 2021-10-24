@@ -37,12 +37,12 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         pass = new javax.swing.JPasswordField();
         viewpass = new javax.swing.JTextField();
-        logo = new javax.swing.JLabel();
         btninicio = new javax.swing.JButton();
         viewusu = new javax.swing.JTextField();
         usuario = new javax.swing.JTextField();
         crearcuenta = new javax.swing.JLabel();
         crearcuenta1 = new javax.swing.JLabel();
+        btncerrar = new javax.swing.JButton();
         imgfondo = new javax.swing.JLabel();
 
         jMenuItem1.setText("jMenuItem1");
@@ -68,9 +68,6 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         viewpass.setText("Contraseña");
         viewpass.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(viewpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 253, 234, 31));
-
-        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/logo.png"))); // NOI18N
-        jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 80, 60));
 
         btninicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/login.png"))); // NOI18N
         btninicio.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -117,8 +114,20 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         });
         jPanel1.add(crearcuenta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 240, 20));
 
+        btncerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/letra-x.png"))); // NOI18N
+        btncerrar.setBorderPainted(false);
+        btncerrar.setContentAreaFilled(false);
+        btncerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btncerrar.setFocusPainted(false);
+        btncerrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncerrarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btncerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 30, 40));
+
         imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
-        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 0, 380, 590));
+        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, -40, 380, 590));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -152,6 +161,10 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         abrir.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_crearcuenta1MouseClicked
+
+    private void btncerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncerrarActionPerformed
+      this.dispose();
+    }//GEN-LAST:event_btncerrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -192,6 +205,7 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btncerrar;
     private javax.swing.JButton btninicio;
     private javax.swing.JLabel crearcuenta;
     private javax.swing.JLabel crearcuenta1;
@@ -199,7 +213,6 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel logo;
     private javax.swing.JPasswordField pass;
     private javax.swing.JTextField usuario;
     private javax.swing.JTextField viewpass;
