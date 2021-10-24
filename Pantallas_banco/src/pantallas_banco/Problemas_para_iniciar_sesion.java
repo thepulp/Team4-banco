@@ -116,7 +116,9 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        // TODO add your handling code here:
+        Home abrir = new Home();
+        abrir.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btn1ActionPerformed
 
     /**

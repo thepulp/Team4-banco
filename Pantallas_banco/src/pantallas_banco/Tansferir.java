@@ -5,6 +5,9 @@
  */
 package pantallas_banco;
 
+import Clases.Usuario;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author fvarg
@@ -80,6 +83,12 @@ public class Tansferir extends javax.swing.JFrame {
         txtbeneficiario.setForeground(new java.awt.Color(1, 0, 39));
         txtbeneficiario.setText("Beneficiario:");
         jPanel1.add(txtbeneficiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 128, -1, -1));
+
+        beneficiario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                beneficiarioActionPerformed(evt);
+            }
+        });
         jPanel1.add(beneficiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 147, 273, 39));
 
         txtnumero.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
@@ -132,6 +141,11 @@ public class Tansferir extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Completar Transferencia");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 471, 273, 51));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -149,12 +163,33 @@ public class Tansferir extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        // TODO add your handling code here:
+        Home abrir = new Home();
+        abrir.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void boxsantanderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxsantanderActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_boxsantanderActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        /*
+        String nUsuario = beneficiario.getText();
+        int posicion = beneficiario.verificarTransicion(nUsuario);
+        if (posicion == -1) {
+            JOptionPane.showMessageDialog(this, "Beneficiario es incorrectos");
+        } else {
+            Home abrir = new Home();
+            abrir.setVisible(true);
+            this.dispose();
+        }
+    }      
+         */
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void beneficiarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_beneficiarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_beneficiarioActionPerformed
 
     /**
      * @param args the command line arguments

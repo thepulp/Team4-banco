@@ -5,6 +5,9 @@
  */
 package pantallas_banco;
 
+import Clases.Usuario;
+import Clases.Lista_Usuario;
+
 /**
  *
  * @author fvarg
@@ -16,8 +19,8 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
      */
     public Detalles_de_la_cuenta() {
         initComponents();
-         setLocationRelativeTo(null);
-         setResizable(false);
+        setLocationRelativeTo(null);
+        setResizable(false);
     }
 
     /**
@@ -31,6 +34,7 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         titulo = new javax.swing.JLabel();
+        Accion = new javax.swing.JButton();
         contenedor = new javax.swing.JPanel();
         varnombre = new javax.swing.JLabel();
         varfecha = new javax.swing.JLabel();
@@ -39,8 +43,8 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         vardireccion = new javax.swing.JLabel();
         varnacionalidad = new javax.swing.JLabel();
         btn_configuracion = new javax.swing.JButton();
-        btn_regreso = new javax.swing.JButton();
         imgfondo = new javax.swing.JLabel();
+        btn_regreso = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -54,6 +58,14 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         titulo.setForeground(new java.awt.Color(1, 0, 39));
         titulo.setText("Detalles de la cuenta:");
         jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
+
+        Accion.setText("Enseñar");
+        Accion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AccionActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Accion, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 400, -1, -1));
 
         contenedor.setBackground(new java.awt.Color(106, 46, 205));
         contenedor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
@@ -122,6 +134,9 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         });
         jPanel1.add(btn_configuracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 530, 60, 50));
 
+        imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
+        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 50, 380, 530));
+
         btn_regreso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btn_regreso.setBorderPainted(false);
         btn_regreso.setContentAreaFilled(false);
@@ -132,9 +147,6 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btn_regreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 60, 50));
-
-        imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
-        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 50, 380, 540));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -155,15 +167,24 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_configuracionActionPerformed
 
     private void btn_regresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_regresoActionPerformed
-        // TODO add your handling code here:
+        Home abrir = new Home();
+        abrir.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btn_regresoActionPerformed
 
-    public void transparenciaButton(){
-    btn_configuracion.setOpaque(false);
-    btn_configuracion.setContentAreaFilled(false);;
-    btn_configuracion.setBorderPainted(false);
-    
+    private void AccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AccionActionPerformed
+        Usuario obj = new Usuario();
+        varnombre.setText(" " + obj.getNombre());
+        varcorreo.setText(" " + obj.getEmail());
+    }//GEN-LAST:event_AccionActionPerformed
+
+    public void transparenciaButton() {
+        btn_configuracion.setOpaque(false);
+        btn_configuracion.setContentAreaFilled(false);;
+        btn_configuracion.setBorderPainted(false);
+
     }
+
     /**
      * @param args the command line arguments
      */
@@ -203,6 +224,7 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Accion;
     private javax.swing.JButton btn_configuracion;
     private javax.swing.JButton btn_regreso;
     private javax.swing.JPanel contenedor;

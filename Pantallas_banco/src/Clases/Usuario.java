@@ -16,6 +16,7 @@ public class Usuario {
     private String nombre;
     private String Contraseña;
     private String Email;
+    private static int contador = 0;
 
     public String getNombre() {
         return nombre;
@@ -40,15 +41,28 @@ public class Usuario {
     public static int verificarUsuarioNuevo(String usuario) {
         Vector lista = mostrar();
         Usuario obj;
+
         for (int i = 0; i < lista.size(); i++) {//recorre la lista de usuarios
 
             obj = (Usuario) lista.elementAt(i);
 
             if (obj.getNombre().equalsIgnoreCase(usuario)) { //verificar
+                contador++;
                 return i;
+
             }
         }
         return -1;
+    }
+
+    public static Usuario findUsuario(String usuario) {
+        Usuario obj;
+        Vector lista = mostrar();
+
+        obj = (Usuario) lista.elementAt(contador);
+
+        return obj;
+
     }
 
     public static int verificarLogin(String usuario, String contraseña) {
@@ -59,7 +73,19 @@ public class Usuario {
             if (obj.getNombre().equalsIgnoreCase(usuario) && obj.getContraseña().equalsIgnoreCase(contraseña)) {
                 return i;
             }
-        }//fin for
+        }
+        return -1;
+    }
+
+    public static int verificarTransicion(String beneficiario) {
+        Vector lista = mostrar();
+        Usuario obj;
+        for (int i = 0; i < lista.size(); i++) {
+            obj = (Usuario) lista.elementAt(i);
+            if (obj.getNombre().equalsIgnoreCase(beneficiario)) {
+                return i;
+            }
+        }
         return -1;
     }
 

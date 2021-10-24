@@ -19,13 +19,17 @@ public class Lista_Usuario {
         datos.addElement(obj);
     }
 
+    public static void buscar(Usuario posiicion) {
+        /*datos.get(posiicion);*/
+    }
+
     public static void Eliminar(int posicion) {
         datos.removeElementAt(posicion);
     }
-    
-    public static Vector mostrar(){
-    return datos; //Aqui todo se va a almacenar
-    
+
+    public static Vector mostrar() {
+        return datos; //Aqui todo se va a almacenar
+
     }
 
 }
