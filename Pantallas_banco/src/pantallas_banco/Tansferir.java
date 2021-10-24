@@ -70,20 +70,21 @@ public class Tansferir extends javax.swing.JFrame {
         jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 528, 70, -1));
 
         titulo.setBackground(new java.awt.Color(1, 0, 39));
-        titulo.setFont(new java.awt.Font("Comfortaa Light", 1, 14)); // NOI18N
+        titulo.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         titulo.setForeground(new java.awt.Color(1, 0, 39));
         titulo.setText("Depositar por transferencia");
         jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 21, 277, 42));
 
-        instruccion.setFont(new java.awt.Font("Comfortaa Light", 0, 9)); // NOI18N
+        instruccion.setFont(new java.awt.Font("Arial Narrow", 0, 12)); // NOI18N
         instruccion.setText("Rellena los siguientes cuadros de informacion para completar.");
         jPanel1.add(instruccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 74, 303, 48));
 
-        txtbeneficiario.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        txtbeneficiario.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         txtbeneficiario.setForeground(new java.awt.Color(1, 0, 39));
         txtbeneficiario.setText("Beneficiario:");
         jPanel1.add(txtbeneficiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 128, -1, -1));
 
+        beneficiario.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         beneficiario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 beneficiarioActionPerformed(evt);
@@ -91,30 +92,32 @@ public class Tansferir extends javax.swing.JFrame {
         });
         jPanel1.add(beneficiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 147, 273, 39));
 
-        txtnumero.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        txtnumero.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         txtnumero.setForeground(new java.awt.Color(1, 0, 39));
         txtnumero.setText("Numero de tarjeta:");
         jPanel1.add(txtnumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 211, -1, -1));
+
+        beneficiario1.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jPanel1.add(beneficiario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 235, 273, 39));
 
-        txtdestino.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        txtdestino.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         txtdestino.setText("Banco Destinatario:");
         jPanel1.add(txtdestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 373, -1, -1));
 
         Grupo_Box.add(boxbbva);
-        boxbbva.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        boxbbva.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         boxbbva.setText("BBVA");
         boxbbva.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel1.add(boxbbva, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 393, 85, -1));
 
         Grupo_Box.add(boxbanamex);
-        boxbanamex.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        boxbanamex.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         boxbanamex.setText("Banamex");
         boxbanamex.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel1.add(boxbanamex, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 393, 80, -1));
 
         Grupo_Box.add(boxsantander);
-        boxsantander.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        boxsantander.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         boxsantander.setText("Santander");
         boxsantander.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         boxsantander.addActionListener(new java.awt.event.ActionListener() {
@@ -125,19 +128,21 @@ public class Tansferir extends javax.swing.JFrame {
         jPanel1.add(boxsantander, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 432, -1, -1));
 
         Grupo_Box.add(boxbanorte);
-        boxbanorte.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        boxbanorte.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         boxbanorte.setText("Banorte");
         boxbanorte.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel1.add(boxbanorte, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 432, 80, -1));
 
-        txtcantidad.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        txtcantidad.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         txtcantidad.setForeground(new java.awt.Color(1, 0, 39));
         txtcantidad.setText("Cantidad:");
         jPanel1.add(txtcantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 292, -1, -1));
+
+        cantidad.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jPanel1.add(cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 316, 273, 39));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 119));
-        jButton1.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Completar Transferencia");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));

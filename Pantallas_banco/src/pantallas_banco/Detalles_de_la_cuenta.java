@@ -54,13 +54,13 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         jPanel1.setForeground(new java.awt.Color(159, 100, 216));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        titulo.setFont(new java.awt.Font("Comfortaa Light", 1, 24)); // NOI18N
+        titulo.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         titulo.setForeground(new java.awt.Color(1, 0, 39));
         titulo.setText("Detalles de la cuenta:");
         jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
 
         Accion.setBackground(new java.awt.Color(0, 1, 119));
-        Accion.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        Accion.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         Accion.setForeground(new java.awt.Color(255, 255, 255));
         Accion.setText("Enseñar");
         Accion.addActionListener(new java.awt.event.ActionListener() {
@@ -73,22 +73,22 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         contenedor.setBackground(new java.awt.Color(106, 46, 205));
         contenedor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
-        varnombre.setFont(new java.awt.Font("Comfortaa Light", 1, 12)); // NOI18N
+        varnombre.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         varnombre.setText("Nombre:");
 
-        varfecha.setFont(new java.awt.Font("Comfortaa Light", 1, 12)); // NOI18N
+        varfecha.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         varfecha.setText("Fecha:");
 
-        varcorreo.setFont(new java.awt.Font("Comfortaa Light", 1, 12)); // NOI18N
+        varcorreo.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         varcorreo.setText("Correo:");
 
-        varnumero.setFont(new java.awt.Font("Comfortaa Light", 1, 12)); // NOI18N
+        varnumero.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         varnumero.setText("Numero:");
 
-        vardireccion.setFont(new java.awt.Font("Comfortaa Light", 1, 12)); // NOI18N
+        vardireccion.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         vardireccion.setText("Direccion:");
 
-        varnacionalidad.setFont(new java.awt.Font("Comfortaa Light", 1, 12)); // NOI18N
+        varnacionalidad.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         varnacionalidad.setText("Nacionalidad:");
 
         javax.swing.GroupLayout contenedorLayout = new javax.swing.GroupLayout(contenedor);

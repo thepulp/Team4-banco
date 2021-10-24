@@ -59,32 +59,35 @@ public class Informacion_bancaria extends javax.swing.JFrame {
 
         contenedor1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        titulo_cuentas1.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        titulo_cuentas1.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         titulo_cuentas1.setText("Cuentas en pesos");
         contenedor1.add(titulo_cuentas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 128, -1));
 
-        titulo_cuenta1.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        titulo_cuenta1.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         titulo_cuenta1.setText("Cuenta 1");
         contenedor1.add(titulo_cuenta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
 
-        titulo_cuenta2.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        titulo_cuenta2.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         titulo_cuenta2.setText("Cuenta 2");
         contenedor1.add(titulo_cuenta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
 
-        titulo_cuenta3.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        titulo_cuenta3.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         titulo_cuenta3.setText("Cuenta 3");
         contenedor1.add(titulo_cuenta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
 
+        saldo1.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         saldo1.setText("$ 235.24");
         contenedor1.add(saldo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, 52, -1));
 
+        saldo2.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         saldo2.setText("$ 2.15");
         contenedor1.add(saldo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 52, -1));
 
+        saldo3.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         saldo3.setText("$ 648.54");
         contenedor1.add(saldo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 52, -1));
 
-        titulo_cuentas2.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        titulo_cuentas2.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         titulo_cuentas2.setText("Tarjetas");
 
         img_tarjeta1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/tarjeta-de-credito.png"))); // NOI18N
@@ -93,19 +96,22 @@ public class Informacion_bancaria extends javax.swing.JFrame {
 
         img_tarjeta3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/tarjeta-de-credito.png"))); // NOI18N
 
-        titulo_cuentas3.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        titulo_cuentas3.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         titulo_cuentas3.setText("Visa Debito");
 
-        titulo_cuentas4.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        titulo_cuentas4.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         titulo_cuentas4.setText("MasterCard");
 
-        titulo_cuentas5.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        titulo_cuentas5.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         titulo_cuentas5.setText("Visa Credito");
 
+        Identificador_tarjeta3.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         Identificador_tarjeta3.setText("• 3078");
 
+        Identificador_tarjeta2.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         Identificador_tarjeta2.setText("•1684");
 
+        Identificador_tarjeta1.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         Identificador_tarjeta1.setText("•4861");
 
         javax.swing.GroupLayout contenedor2Layout = new javax.swing.GroupLayout(contenedor2);
@@ -199,7 +205,7 @@ public class Informacion_bancaria extends javax.swing.JFrame {
                 .addComponent(contenedor1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(contenedor2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btn1))
         );
 

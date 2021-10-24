@@ -56,7 +56,7 @@
         <Component class="javax.swing.JLabel" name="titulo">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Comfortaa Light" size="24" style="1"/>
+              <Font name="Arial Narrow" size="12" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="27" green="0" red="1" type="rgb"/>
@@ -75,7 +75,7 @@
               <Color blue="77" green="1" red="0" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Comfortaa" size="11" style="0"/>
+              <Font name="Arial Narrow" size="12" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -151,7 +151,7 @@
             <Component class="javax.swing.JLabel" name="varnombre">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="12" style="1"/>
+                  <Font name="Arial Narrow" size="12" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Nombre:"/>
               </Properties>
@@ -159,7 +159,7 @@
             <Component class="javax.swing.JLabel" name="varfecha">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="12" style="1"/>
+                  <Font name="Arial Narrow" size="12" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Fecha:"/>
               </Properties>
@@ -167,7 +167,7 @@
             <Component class="javax.swing.JLabel" name="varcorreo">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="12" style="1"/>
+                  <Font name="Arial Narrow" size="12" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Correo:"/>
               </Properties>
@@ -175,7 +175,7 @@
             <Component class="javax.swing.JLabel" name="varnumero">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="12" style="1"/>
+                  <Font name="Arial Narrow" size="12" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Numero:"/>
               </Properties>
@@ -183,7 +183,7 @@
             <Component class="javax.swing.JLabel" name="vardireccion">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="12" style="1"/>
+                  <Font name="Arial Narrow" size="12" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Direccion:"/>
               </Properties>
@@ -191,7 +191,7 @@
             <Component class="javax.swing.JLabel" name="varnacionalidad">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="12" style="1"/>
+                  <Font name="Arial Narrow" size="12" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Nacionalidad:"/>
               </Properties>

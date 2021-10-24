@@ -70,7 +70,7 @@
                   <Component id="contenedor1" min="-2" pref="100" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="contenedor2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="10" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Component id="btn1" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -86,7 +86,7 @@
             <Component class="javax.swing.JLabel" name="titulo_cuentas1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="11" style="1"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cuentas en pesos"/>
               </Properties>
@@ -99,7 +99,7 @@
             <Component class="javax.swing.JLabel" name="titulo_cuenta1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa" size="11" style="0"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cuenta 1"/>
               </Properties>
@@ -112,7 +112,7 @@
             <Component class="javax.swing.JLabel" name="titulo_cuenta2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa" size="11" style="0"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cuenta 2"/>
               </Properties>
@@ -125,7 +125,7 @@
             <Component class="javax.swing.JLabel" name="titulo_cuenta3">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa" size="11" style="0"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cuenta 3"/>
               </Properties>
@@ -137,6 +137,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="saldo1">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial Narrow" size="11" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="$ 235.24"/>
               </Properties>
               <Constraints>
@@ -147,6 +150,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="saldo2">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial Narrow" size="11" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="$ 2.15"/>
               </Properties>
               <Constraints>
@@ -157,6 +163,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="saldo3">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial Narrow" size="11" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="$ 648.54"/>
               </Properties>
               <Constraints>
@@ -249,7 +258,7 @@
             <Component class="javax.swing.JLabel" name="titulo_cuentas2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="11" style="1"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Tarjetas"/>
               </Properties>
@@ -278,7 +287,7 @@
             <Component class="javax.swing.JLabel" name="titulo_cuentas3">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="11" style="1"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Visa Debito"/>
               </Properties>
@@ -286,7 +295,7 @@
             <Component class="javax.swing.JLabel" name="titulo_cuentas4">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="11" style="1"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="MasterCard"/>
               </Properties>
@@ -294,23 +303,32 @@
             <Component class="javax.swing.JLabel" name="titulo_cuentas5">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="11" style="1"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Visa Credito"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="Identificador_tarjeta3">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial Narrow" size="11" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="&#x2022; 3078"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="Identificador_tarjeta2">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial Narrow" size="11" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="&#x2022;1684"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="Identificador_tarjeta1">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial Narrow" size="11" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="&#x2022;4861"/>
               </Properties>
             </Component>

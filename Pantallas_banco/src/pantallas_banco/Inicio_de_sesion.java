@@ -62,7 +62,7 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
 
         viewpass.setEditable(false);
         viewpass.setBackground(new java.awt.Color(0, 0, 119));
-        viewpass.setFont(new java.awt.Font("Comfortaa", 1, 11)); // NOI18N
+        viewpass.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         viewpass.setForeground(new java.awt.Color(255, 255, 255));
         viewpass.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewpass.setText("Contraseña");
@@ -83,7 +83,7 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
 
         viewusu.setEditable(false);
         viewusu.setBackground(new java.awt.Color(0, 0, 119));
-        viewusu.setFont(new java.awt.Font("Comfortaa", 1, 11)); // NOI18N
+        viewusu.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         viewusu.setForeground(new java.awt.Color(255, 255, 255));
         viewusu.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewusu.setText("Usuario");
@@ -95,14 +95,14 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         jPanel1.add(usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 192, 234, 28));
 
         crearcuenta.setBackground(new java.awt.Color(255, 255, 255));
-        crearcuenta.setFont(new java.awt.Font("Comfortaa", 1, 12)); // NOI18N
+        crearcuenta.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         crearcuenta.setForeground(new java.awt.Color(255, 255, 255));
         crearcuenta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         crearcuenta.setText("¿Olvidaste tu contraseña?");
         crearcuenta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel1.add(crearcuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 240, 20));
 
-        crearcuenta1.setFont(new java.awt.Font("Comfortaa", 1, 12)); // NOI18N
+        crearcuenta1.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         crearcuenta1.setForeground(new java.awt.Color(255, 255, 255));
         crearcuenta1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         crearcuenta1.setText("Crear Cuenta");

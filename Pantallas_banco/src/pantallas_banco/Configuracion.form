@@ -71,7 +71,7 @@
                           <Component id="texto3" alignment="0" max="32767" attributes="0"/>
                           <Component id="texto2" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="124" max="32767" attributes="0"/>
+                      <EmptySpace pref="177" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -101,7 +101,7 @@
             <Component class="javax.swing.JLabel" name="texto1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="11" style="1"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Administracion de cuentas"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -112,7 +112,7 @@
             <Component class="javax.swing.JLabel" name="texto2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="11" style="1"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Borrar cuenta"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -123,7 +123,7 @@
             <Component class="javax.swing.JLabel" name="texto3">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="11" style="1"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Registro de otras cuentas"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -134,7 +134,7 @@
             <Component class="javax.swing.JLabel" name="texto4">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="11" style="1"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ayuda Tecnica"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -145,7 +145,7 @@
             <Component class="javax.swing.JLabel" name="texto5">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="11" style="1"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Preguntas Frecuentes"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -156,7 +156,7 @@
             <Component class="javax.swing.JLabel" name="texto6">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Comfortaa Light" size="11" style="1"/>
+                  <Font name="Arial Narrow" size="11" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Tutorial de uso"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -177,25 +177,6 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="nombreapp">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Trebuchet MS" size="24" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="78" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imgs/logo.png"/>
-            </Property>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="145" y="21" width="-1" height="-1"/>
-            </Constraint>
-          </Constraints>
-        </Component>
         <Component class="javax.swing.JButton" name="btn1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">

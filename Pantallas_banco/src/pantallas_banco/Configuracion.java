@@ -38,7 +38,6 @@ public class Configuracion extends javax.swing.JFrame {
         texto5 = new javax.swing.JLabel();
         texto6 = new javax.swing.JLabel();
         texto7 = new javax.swing.JLabel();
-        nombreapp = new javax.swing.JLabel();
         btn1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,27 +47,27 @@ public class Configuracion extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        texto1.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        texto1.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         texto1.setText("Administracion de cuentas");
         texto1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        texto2.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        texto2.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         texto2.setText("Borrar cuenta");
         texto2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        texto3.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        texto3.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         texto3.setText("Registro de otras cuentas");
         texto3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        texto4.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        texto4.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         texto4.setText("Ayuda Tecnica");
         texto4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        texto5.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        texto5.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         texto5.setText("Preguntas Frecuentes");
         texto5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        texto6.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        texto6.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         texto6.setText("Tutorial de uso");
         texto6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -90,7 +89,7 @@ public class Configuracion extends javax.swing.JFrame {
                     .addComponent(texto4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(texto3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(texto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(124, Short.MAX_VALUE))
+                .addContainerGap(177, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -113,12 +112,6 @@ public class Configuracion extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 310, 430));
-
-        nombreapp.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
-        nombreapp.setForeground(new java.awt.Color(0, 0, 120));
-        nombreapp.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        nombreapp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/logo.png"))); // NOI18N
-        jPanel1.add(nombreapp, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 21, -1, -1));
 
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btn1.setBorderPainted(false);
@@ -191,7 +184,6 @@ public class Configuracion extends javax.swing.JFrame {
     private javax.swing.JButton btn1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel nombreapp;
     private javax.swing.JLabel texto1;
     private javax.swing.JLabel texto2;
     private javax.swing.JLabel texto3;

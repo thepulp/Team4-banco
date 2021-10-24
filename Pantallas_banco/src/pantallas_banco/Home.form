@@ -76,7 +76,7 @@
               <Color blue="77" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Comfortaa" size="9" style="0"/>
+              <Font name="Arial Narrow" size="9" style="0"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -103,7 +103,7 @@
               <Color blue="77" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Comfortaa" size="9" style="0"/>
+              <Font name="Arial Narrow" size="9" style="0"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -130,7 +130,7 @@
               <Color blue="77" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Comfortaa" size="9" style="0"/>
+              <Font name="Arial Narrow" size="9" style="0"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -157,7 +157,7 @@
               <Color blue="77" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Comfortaa" size="9" style="0"/>
+              <Font name="Arial Narrow" size="9" style="0"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -181,7 +181,7 @@
         <Component class="javax.swing.JLabel" name="textobtn2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Comfortaa Light" size="11" style="1"/>
+              <Font name="Arial Narrow" size="11" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="Transferencias"/>
@@ -195,7 +195,7 @@
         <Component class="javax.swing.JLabel" name="textobtn3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Comfortaa Light" size="11" style="1"/>
+              <Font name="Arial Narrow" size="11" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="Saldo"/>
@@ -209,7 +209,7 @@
         <Component class="javax.swing.JLabel" name="textobtn4">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Comfortaa Light" size="11" style="1"/>
+              <Font name="Arial Narrow" size="11" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="Actividades recientes"/>
@@ -223,7 +223,7 @@
         <Component class="javax.swing.JLabel" name="textobtn1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Comfortaa Light" size="11" style="1"/>
+              <Font name="Arial Narrow" size="11" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="Informacion cuenta"/>

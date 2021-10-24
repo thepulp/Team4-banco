@@ -68,7 +68,7 @@ public class Registro extends javax.swing.JFrame {
 
         viewpass.setEditable(false);
         viewpass.setBackground(new java.awt.Color(0, 0, 119));
-        viewpass.setFont(new java.awt.Font("Comfortaa", 1, 11)); // NOI18N
+        viewpass.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         viewpass.setForeground(new java.awt.Color(255, 255, 255));
         viewpass.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewpass.setText("Email");
@@ -77,7 +77,7 @@ public class Registro extends javax.swing.JFrame {
 
         viewpass1.setEditable(false);
         viewpass1.setBackground(new java.awt.Color(0, 0, 119));
-        viewpass1.setFont(new java.awt.Font("Comfortaa", 1, 11)); // NOI18N
+        viewpass1.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         viewpass1.setForeground(new java.awt.Color(255, 255, 255));
         viewpass1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewpass1.setText("Contraseña");
@@ -101,7 +101,7 @@ public class Registro extends javax.swing.JFrame {
 
         viewusu.setEditable(false);
         viewusu.setBackground(new java.awt.Color(0, 0, 119));
-        viewusu.setFont(new java.awt.Font("Comfortaa", 1, 11)); // NOI18N
+        viewusu.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         viewusu.setForeground(new java.awt.Color(255, 255, 255));
         viewusu.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewusu.setText("Usuario");
@@ -115,11 +115,11 @@ public class Registro extends javax.swing.JFrame {
         usuario1.setFont(new java.awt.Font("Trebuchet MS", 1, 11)); // NOI18N
         jPanel1.add(usuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 192, 234, 28));
 
-        jLabel1.setFont(new java.awt.Font("Comfortaa Light", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial Narrow", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(1, 0, 39));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Registro");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 44, 250, 40));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 250, 40));
 
         btnGoback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btnGoback.setBorderPainted(false);

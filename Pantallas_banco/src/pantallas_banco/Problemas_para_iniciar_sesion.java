@@ -46,15 +46,15 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
         fondo.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        titulo.setFont(new java.awt.Font("Comfortaa", 1, 18)); // NOI18N
+        titulo.setFont(new java.awt.Font("Arial Narrow", 1, 24)); // NOI18N
         titulo.setForeground(new java.awt.Color(1, 0, 39));
         titulo.setText("Recuperar contraseña");
-        fondo.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 39, 230, 36));
+        fondo.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 39, 270, 36));
 
         contenedor.setBackground(new java.awt.Color(106, 46, 205));
         contenedor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
-        intruccion.setFont(new java.awt.Font("Comfortaa", 1, 10)); // NOI18N
+        intruccion.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         intruccion.setForeground(new java.awt.Color(1, 0, 39));
         intruccion.setText("Ingresa el correo electrónico asociado a la cuenta.");
 
@@ -63,10 +63,10 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
         contenedorLayout.setHorizontalGroup(
             contenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, contenedorLayout.createSequentialGroup()
-                .addContainerGap(22, Short.MAX_VALUE)
+                .addContainerGap(21, Short.MAX_VALUE)
                 .addGroup(contenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(intruccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(varcorreo))
+                    .addComponent(varcorreo)
+                    .addComponent(intruccion, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE))
                 .addGap(19, 19, 19))
         );
         contenedorLayout.setVerticalGroup(
@@ -79,7 +79,7 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
                 .addContainerGap(87, Short.MAX_VALUE))
         );
 
-        fondo.add(contenedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 93, -1, -1));
+        fondo.add(contenedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 93, 320, -1));
 
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btn1.setBorderPainted(false);

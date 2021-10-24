@@ -62,7 +62,7 @@ public class Home extends javax.swing.JFrame {
         jPanel1.add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 530, 350, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 119));
-        jButton1.setFont(new java.awt.Font("Comfortaa", 0, 9)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Arial Narrow", 0, 9)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/cuenta.png"))); // NOI18N
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -74,7 +74,7 @@ public class Home extends javax.swing.JFrame {
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 150, 60));
 
         jButton2.setBackground(new java.awt.Color(0, 0, 119));
-        jButton2.setFont(new java.awt.Font("Comfortaa", 0, 9)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Arial Narrow", 0, 9)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/mas-reciente.png"))); // NOI18N
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -86,7 +86,7 @@ public class Home extends javax.swing.JFrame {
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 150, 60));
 
         jButton3.setBackground(new java.awt.Color(0, 0, 119));
-        jButton3.setFont(new java.awt.Font("Comfortaa", 0, 9)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Arial Narrow", 0, 9)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/dinero.png"))); // NOI18N
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -98,7 +98,7 @@ public class Home extends javax.swing.JFrame {
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 150, 60));
 
         jButton4.setBackground(new java.awt.Color(0, 0, 119));
-        jButton4.setFont(new java.awt.Font("Comfortaa", 0, 9)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Arial Narrow", 0, 9)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/transferencia-bancaria.png"))); // NOI18N
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -109,22 +109,22 @@ public class Home extends javax.swing.JFrame {
         });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 150, 60));
 
-        textobtn2.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        textobtn2.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         textobtn2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         textobtn2.setText("Transferencias");
         jPanel1.add(textobtn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 140, 20));
 
-        textobtn3.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        textobtn3.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         textobtn3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         textobtn3.setText("Saldo");
         jPanel1.add(textobtn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 140, 20));
 
-        textobtn4.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        textobtn4.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         textobtn4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         textobtn4.setText("Actividades recientes");
         jPanel1.add(textobtn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 390, 150, 20));
 
-        textobtn1.setFont(new java.awt.Font("Comfortaa Light", 1, 11)); // NOI18N
+        textobtn1.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         textobtn1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         textobtn1.setText("Informacion cuenta");
         jPanel1.add(textobtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 140, 20));

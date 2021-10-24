@@ -59,7 +59,7 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         fondo.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 530, 80, 60));
 
         lista.setBackground(new java.awt.Color(106, 46, 205));
-        lista.setFont(new java.awt.Font("Comfortaa", 0, 14)); // NOI18N
+        lista.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         lista.setForeground(new java.awt.Color(1, 0, 39));
         lista.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "11 octubre 2021", "Paypal *Steam Games     $-499", " ", " ", "8 de octubre", "Pago Cuenta de Tercero $42", "Pago Cuenta de Tercero $100", " ", " ", "1 de octubre", "Paypal Spotify Ab           $-115", " ", " ", "26 de septiembre", "Pago Cuenta de Tercero$400" };
@@ -70,26 +70,26 @@ public class Actividades_Recientes extends javax.swing.JFrame {
 
         fondo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 330, 300));
 
-        Titulo.setFont(new java.awt.Font("Comfortaa", 1, 14)); // NOI18N
+        Titulo.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         Titulo.setForeground(new java.awt.Color(1, 0, 39));
         Titulo.setText("Ultimos Movimientos:");
         fondo.add(Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 21, 170, 28));
 
         btnretiros.setBackground(new java.awt.Color(0, 0, 119));
-        btnretiros.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        btnretiros.setFont(new java.awt.Font("Arial Narrow", 0, 11)); // NOI18N
         btnretiros.setForeground(new java.awt.Color(255, 255, 255));
         btnretiros.setText("No.Retiros");
         btnretiros.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         fondo.add(btnretiros, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 110, 40));
 
         btndepositos.setBackground(new java.awt.Color(0, 0, 119));
-        btndepositos.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        btndepositos.setFont(new java.awt.Font("Arial Narrow", 0, 11)); // NOI18N
         btndepositos.setForeground(new java.awt.Color(255, 255, 255));
         btndepositos.setText("No.Depositos");
         btndepositos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         fondo.add(btndepositos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 110, 40));
 
-        Numeros.setFont(new java.awt.Font("Comfortaa", 0, 11)); // NOI18N
+        Numeros.setFont(new java.awt.Font("Arial Narrow", 0, 11)); // NOI18N
         Numeros.setForeground(new java.awt.Color(1, 0, 39));
         Numeros.setText("No.");
         fondo.add(Numeros, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 60, 20));
