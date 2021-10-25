@@ -177,8 +177,10 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
 
     private void AccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AccionActionPerformed
         Usuario obj = new Usuario();
-        varnombre.setText(" " + obj.getNombre());
-        varcorreo.setText(" " + obj.getEmail());
+        String nombre= obj.getNombre();
+        String email = obj.getEmail();
+        varnombre.setText("Nombre: " + nombre);
+        varcorreo.setText("Email: " + email);
     }//GEN-LAST:event_AccionActionPerformed
 
     public void transparenciaButton() {

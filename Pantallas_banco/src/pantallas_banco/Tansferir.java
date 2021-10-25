@@ -137,17 +137,17 @@ public class Tansferir extends javax.swing.JFrame {
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void TransferirBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TransferirBtnActionPerformed
-      /*
+ /*
         String nUsuario = beneficio.getText();
         int posicion = Usuario.verificarTransicion(nUsuario);
         if (posicion == -1) {
             JOptionPane.showMessageDialog(this, "Beneficiario es incorrectos");
         } else {
-        depositar deposito = new depositar(cantidad.getText);  
-        JOptionPane.showMessageDialog(this, "Usuario ya esta siendo usado");
+        depositar deposito = new depositar(cantidad.getText());  
+        JOptionPane.showMessageDialog(this, "deposto exitoso");
         }
     }      
-       */  
+*/
     }//GEN-LAST:event_TransferirBtnActionPerformed
 
     private void beneficioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_beneficioActionPerformed
