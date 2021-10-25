@@ -42,6 +42,7 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         imgfondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         fondo.setBackground(new java.awt.Color(159, 100, 216));
         fondo.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));

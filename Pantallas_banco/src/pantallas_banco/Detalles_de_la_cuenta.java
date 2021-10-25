@@ -42,7 +42,6 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         varnumero = new javax.swing.JLabel();
         vardireccion = new javax.swing.JLabel();
         varnacionalidad = new javax.swing.JLabel();
-        btn_configuracion = new javax.swing.JButton();
         btn_regreso = new javax.swing.JButton();
         imgfondo = new javax.swing.JLabel();
 
@@ -126,17 +125,6 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
 
         jPanel1.add(contenedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 310, 230));
 
-        btn_configuracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/configuracion-gear.png"))); // NOI18N
-        btn_configuracion.setBorderPainted(false);
-        btn_configuracion.setContentAreaFilled(false);
-        btn_configuracion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btn_configuracion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_configuracionActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btn_configuracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 530, 60, 50));
-
         btn_regreso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btn_regreso.setBorderPainted(false);
         btn_regreso.setContentAreaFilled(false);
@@ -165,10 +153,6 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_configuracionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_configuracionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_configuracionActionPerformed
-
     private void btn_regresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_regresoActionPerformed
         Home abrir = new Home();
         abrir.setVisible(true);
@@ -183,12 +167,7 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         varcorreo.setText("Email: " + email);
     }//GEN-LAST:event_AccionActionPerformed
 
-    public void transparenciaButton() {
-        btn_configuracion.setOpaque(false);
-        btn_configuracion.setContentAreaFilled(false);;
-        btn_configuracion.setBorderPainted(false);
-
-    }
+    
 
     /**
      * @param args the command line arguments
@@ -230,7 +209,6 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Accion;
-    private javax.swing.JButton btn_configuracion;
     private javax.swing.JButton btn_regreso;
     private javax.swing.JPanel contenedor;
     private javax.swing.JLabel imgfondo;
