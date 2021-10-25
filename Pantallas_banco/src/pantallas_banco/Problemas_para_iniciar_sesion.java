@@ -5,6 +5,8 @@
  */
 package pantallas_banco;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author fvarg
@@ -90,12 +92,17 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
                 btn1ActionPerformed(evt);
             }
         });
-        fondo.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 528, 70, -1));
+        fondo.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 530, 70, -1));
 
         btncontraseña.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/candado.png"))); // NOI18N
         btncontraseña.setBorderPainted(false);
         btncontraseña.setContentAreaFilled(false);
         btncontraseña.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btncontraseña.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncontraseñaActionPerformed(evt);
+            }
+        });
         fondo.add(btncontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 460, 200, -1));
 
         imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
@@ -116,10 +123,14 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        Home abrir = new Home();
+        Inicio_de_sesion abrir = new Inicio_de_sesion();
         abrir.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btn1ActionPerformed
+
+    private void btncontraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncontraseñaActionPerformed
+     JOptionPane.showMessageDialog(this, "Se ha enviado un correo a su direccion de correo electronico");
+    }//GEN-LAST:event_btncontraseñaActionPerformed
 
     /**
      * @param args the command line arguments

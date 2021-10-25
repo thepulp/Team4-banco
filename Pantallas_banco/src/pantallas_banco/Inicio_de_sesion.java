@@ -100,6 +100,11 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         crearcuenta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         crearcuenta.setText("¿Olvidaste tu contraseña?");
         crearcuenta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        crearcuenta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                crearcuentaMouseClicked(evt);
+            }
+        });
         jPanel1.add(crearcuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 240, 20));
 
         crearcuenta1.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
@@ -165,6 +170,12 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
     private void btncerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncerrarActionPerformed
       this.dispose();
     }//GEN-LAST:event_btncerrarActionPerformed
+
+    private void crearcuentaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_crearcuentaMouseClicked
+       Problemas_para_iniciar_sesion abrir = new Problemas_para_iniciar_sesion();
+        abrir.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_crearcuentaMouseClicked
 
     /**
      * @param args the command line arguments
