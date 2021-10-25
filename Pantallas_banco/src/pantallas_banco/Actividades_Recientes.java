@@ -88,6 +88,11 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         btndepositos.setForeground(new java.awt.Color(255, 255, 255));
         btndepositos.setText("No.Depositos");
         btndepositos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btndepositos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btndepositosActionPerformed(evt);
+            }
+        });
         fondo.add(btndepositos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 110, 40));
 
         Numeros.setFont(new java.awt.Font("Arial Narrow", 0, 11)); // NOI18N
@@ -117,6 +122,13 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         abrir.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btn1ActionPerformed
+
+    private void btndepositosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndepositosActionPerformed
+        Tansferir bs = new Tansferir();
+        int nm = bs.contador;
+        String numCadena= nm+ " Depositos realizados";
+        Numeros.setText(numCadena);
+    }//GEN-LAST:event_btndepositosActionPerformed
 
     /**
      * @param args the command line arguments

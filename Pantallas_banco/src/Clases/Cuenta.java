@@ -13,10 +13,12 @@ import java.util.Vector;
  * @author HP
  */
 public class Cuenta {
-        // Definición de las propiedades de la clase
+    // Definición de las propiedades de la clase
+
     private int numeroCuenta;
+    private int Contador = 0;
     private double saldo;
-    
+
     public Cuenta(int cuenta, double inicial) {
         numeroCuenta = cuenta;
         saldo = inicial;
@@ -26,6 +28,10 @@ public class Cuenta {
         saldo = saldo + cantidad;
     } // Fin del método depositar
 
+    public void historial() {
+        Contador++;
+    }
+
     public void retirar(double cantidad) {
         saldo = saldo - cantidad;
     } // Fin del método retirar
@@ -33,8 +39,8 @@ public class Cuenta {
     public double saldo() {
         return saldo;
     } // Fin del método saldo   
-    
-        public static int verificarTransicion(String beneficiario) {
+
+    public static int verificarTransicion(String beneficiario) {
         Vector lista = mostrar();
         Usuario obj;
         for (int i = 0; i < lista.size(); i++) {
