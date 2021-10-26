@@ -129,7 +129,12 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btncontraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncontraseñaActionPerformed
-     JOptionPane.showMessageDialog(this, "Se ha enviado un correo a su direccion de correo electronico");
+     
+        if(varcorreo == null){
+        JOptionPane.showMessageDialog(this, "No ha llenado el ");
+        }else{
+        JOptionPane.showMessageDialog(this, "Se ha enviado un correo a su direccion de correo electronico");
+        }
     }//GEN-LAST:event_btncontraseñaActionPerformed
 
     /**

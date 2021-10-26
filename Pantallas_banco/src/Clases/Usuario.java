@@ -65,15 +65,7 @@ public class Usuario {
         return -1;
     }
 
-    public static Usuario findUsuario(String usuario) {
-        Usuario obj;
-        Vector lista = mostrar();
 
-        obj = (Usuario) lista.elementAt(contador);
-
-        return obj;
-
-    }
 
     public static int verificarLogin(String usuario, String contraseña) {
         Vector lista = mostrar();

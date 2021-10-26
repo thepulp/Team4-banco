@@ -20,9 +20,9 @@ public class Lista_Usuario {
     }
 
 
-    public static void Eliminar(int posicion) {
+   /* public static void Eliminar(int posicion) {
         datos.removeElementAt(posicion);
-    }
+    }*/
 
     public static Vector mostrar() {
         return datos; //Aqui todo se va a almacenar

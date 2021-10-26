@@ -15,7 +15,8 @@ import javax.swing.JOptionPane;
  */
 public class Tansferir extends javax.swing.JFrame {
 
-    int contador =0;
+    int contador = 0;
+
     /**
      * Creates new form Tansferir
      */
@@ -139,22 +140,21 @@ public class Tansferir extends javax.swing.JFrame {
 
     private void TransferirBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TransferirBtnActionPerformed
 
-        
-        String bf= beneficio.getText();
-        Cuenta cuenta;
-        //Cuenta.verificarTransicion(bf);
-       int posicion = Usuario.verificarTransicion(bf);
-        if(posicion == -1){
+        String bf = beneficio.getText();
+        Cuenta Cuenta1;
+        Cuenta1 = new Cuenta(11111, 2500.70);
+        int posicion = Usuario.verificarTransicion(bf);
+        if (posicion == -1) {
             JOptionPane.showMessageDialog(this, "Beneficiario es incorrecto");
-       }else{
-        contador ++;
-        String deposito1 = cantidad.getText();
-        double deposito2 = Double.parseDouble(deposito1);
-        //cuenta.depositar(deposito2);
-        JOptionPane.showMessageDialog(this, "deposito exitoso");
+        } else {
+            String deposito1 = cantidad.getText();
+            double deposito2 = Double.parseDouble(deposito1);
+            Cuenta1.depositar(deposito2);
+            JOptionPane.showMessageDialog(this, "deposito exitoso");
+            contador++;
         }
-        
-        
+
+
     }//GEN-LAST:event_TransferirBtnActionPerformed
 
     private void beneficioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_beneficioActionPerformed

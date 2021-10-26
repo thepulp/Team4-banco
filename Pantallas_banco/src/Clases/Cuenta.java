@@ -24,6 +24,7 @@ public class Cuenta {
         saldo = inicial;
     } // Fin del constructor cuenta
 
+
     public void depositar(double cantidad) {
         saldo = saldo + cantidad;
     } // Fin del método depositar
@@ -40,15 +41,5 @@ public class Cuenta {
         return saldo;
     } // Fin del método saldo   
 
-    public static int verificarTransicion(String beneficiario) {
-        Vector lista = mostrar();
-        Usuario obj;
-        for (int i = 0; i < lista.size(); i++) {
-            obj = (Usuario) lista.elementAt(i);
-            if (obj.getNombre().equals(beneficiario)) {
-                return i;
-            }
-        }
-        return -1;
-    }
+
 }
