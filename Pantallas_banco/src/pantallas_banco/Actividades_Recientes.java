@@ -39,12 +39,12 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         btnretiros = new javax.swing.JButton();
         btndepositos = new javax.swing.JButton();
         Numeros = new javax.swing.JLabel();
-        imgfondo = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        fondo.setBackground(new java.awt.Color(159, 100, 216));
+        fondo.setBackground(new java.awt.Color(61, 63, 83));
         fondo.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -59,9 +59,9 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         });
         fondo.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 530, 80, 60));
 
-        lista.setBackground(new java.awt.Color(106, 46, 205));
+        lista.setBackground(new java.awt.Color(240, 240, 240));
         lista.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
-        lista.setForeground(new java.awt.Color(1, 0, 39));
+        lista.setForeground(new java.awt.Color(61, 63, 83));
         lista.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "11 octubre 2021", "Paypal *Steam Games     $-499", " ", " ", "8 de octubre", "Pago Cuenta de Tercero $42", "Pago Cuenta de Tercero $100", " ", " ", "1 de octubre", "Paypal Spotify Ab           $-115", " ", " ", "26 de septiembre", "Pago Cuenta de Tercero$400" };
             public int getSize() { return strings.length; }
@@ -72,20 +72,18 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         fondo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 330, 300));
 
         Titulo.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
-        Titulo.setForeground(new java.awt.Color(1, 0, 39));
+        Titulo.setForeground(new java.awt.Color(117, 198, 173));
         Titulo.setText("Ultimos Movimientos:");
         fondo.add(Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 21, 170, 28));
 
-        btnretiros.setBackground(new java.awt.Color(0, 0, 119));
+        btnretiros.setBackground(new java.awt.Color(224, 127, 181));
         btnretiros.setFont(new java.awt.Font("Arial Narrow", 0, 11)); // NOI18N
-        btnretiros.setForeground(new java.awt.Color(255, 255, 255));
         btnretiros.setText("No.Retiros");
         btnretiros.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         fondo.add(btnretiros, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 110, 40));
 
-        btndepositos.setBackground(new java.awt.Color(0, 0, 119));
+        btndepositos.setBackground(new java.awt.Color(224, 127, 181));
         btndepositos.setFont(new java.awt.Font("Arial Narrow", 0, 11)); // NOI18N
-        btndepositos.setForeground(new java.awt.Color(255, 255, 255));
         btndepositos.setText("No.Depositos");
         btndepositos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btndepositos.addActionListener(new java.awt.event.ActionListener() {
@@ -96,12 +94,12 @@ public class Actividades_Recientes extends javax.swing.JFrame {
         fondo.add(btndepositos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 110, 40));
 
         Numeros.setFont(new java.awt.Font("Arial Narrow", 0, 11)); // NOI18N
-        Numeros.setForeground(new java.awt.Color(1, 0, 39));
+        Numeros.setForeground(new java.awt.Color(117, 198, 173));
         Numeros.setText("No.");
         fondo.add(Numeros, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 60, 20));
 
-        imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
-        fondo.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 0, 380, 590));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/f6.png"))); // NOI18N
+        fondo.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, 200, 180));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -172,7 +170,7 @@ public class Actividades_Recientes extends javax.swing.JFrame {
     private javax.swing.JButton btndepositos;
     private javax.swing.JButton btnretiros;
     private javax.swing.JPanel fondo;
-    private javax.swing.JLabel imgfondo;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JList<String> lista;
     // End of variables declaration//GEN-END:variables

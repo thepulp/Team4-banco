@@ -44,20 +44,19 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        fondo.setBackground(new java.awt.Color(159, 100, 216));
+        fondo.setBackground(new java.awt.Color(61, 63, 83));
         fondo.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         titulo.setFont(new java.awt.Font("Arial Narrow", 1, 24)); // NOI18N
-        titulo.setForeground(new java.awt.Color(1, 0, 39));
+        titulo.setForeground(new java.awt.Color(117, 198, 173));
         titulo.setText("Recuperar contraseña");
         fondo.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 39, 270, 36));
 
-        contenedor.setBackground(new java.awt.Color(106, 46, 205));
+        contenedor.setBackground(new java.awt.Color(240, 217, 206));
         contenedor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
         intruccion.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
-        intruccion.setForeground(new java.awt.Color(1, 0, 39));
         intruccion.setText("Ingresa el correo electrónico asociado a la cuenta.");
 
         javax.swing.GroupLayout contenedorLayout = new javax.swing.GroupLayout(contenedor);
@@ -106,7 +105,7 @@ public class Problemas_para_iniciar_sesion extends javax.swing.JFrame {
         fondo.add(btncontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 460, 200, -1));
 
         imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
-        fondo.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, -20, 380, 610));
+        fondo.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, 30, 380, 610));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

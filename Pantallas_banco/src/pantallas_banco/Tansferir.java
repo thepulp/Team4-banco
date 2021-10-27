@@ -47,11 +47,12 @@ public class Tansferir extends javax.swing.JFrame {
         txtcantidad = new javax.swing.JLabel();
         cantidad = new javax.swing.JTextField();
         TransferirBtn = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(159, 100, 216));
+        jPanel1.setBackground(new java.awt.Color(61, 63, 83));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
         jPanel1.setForeground(new java.awt.Color(1, 0, 39));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -69,16 +70,17 @@ public class Tansferir extends javax.swing.JFrame {
 
         titulo.setBackground(new java.awt.Color(1, 0, 39));
         titulo.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
-        titulo.setForeground(new java.awt.Color(1, 0, 39));
+        titulo.setForeground(new java.awt.Color(117, 198, 173));
         titulo.setText("Depositar por transferencia");
         jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 21, 277, 42));
 
-        instruccion.setFont(new java.awt.Font("Arial Narrow", 0, 12)); // NOI18N
+        instruccion.setFont(new java.awt.Font("Arial Narrow", 3, 13)); // NOI18N
+        instruccion.setForeground(new java.awt.Color(240, 217, 206));
         instruccion.setText("Rellena los siguientes cuadros de informacion para completar.");
-        jPanel1.add(instruccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 74, 303, 48));
+        jPanel1.add(instruccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 74, 340, 48));
 
-        txtbeneficiario.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
-        txtbeneficiario.setForeground(new java.awt.Color(1, 0, 39));
+        txtbeneficiario.setFont(new java.awt.Font("Arial Narrow", 1, 16)); // NOI18N
+        txtbeneficiario.setForeground(new java.awt.Color(117, 198, 173));
         txtbeneficiario.setText("Beneficiario:");
         jPanel1.add(txtbeneficiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 128, -1, -1));
 
@@ -90,25 +92,24 @@ public class Tansferir extends javax.swing.JFrame {
         });
         jPanel1.add(beneficio, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 147, 273, 39));
 
-        txtnumero.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
-        txtnumero.setForeground(new java.awt.Color(1, 0, 39));
+        txtnumero.setFont(new java.awt.Font("Arial Narrow", 1, 16)); // NOI18N
+        txtnumero.setForeground(new java.awt.Color(117, 198, 173));
         txtnumero.setText("Numero de tarjeta:");
         jPanel1.add(txtnumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 211, -1, -1));
 
         beneficiario1.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jPanel1.add(beneficiario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 235, 273, 39));
 
-        txtcantidad.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
-        txtcantidad.setForeground(new java.awt.Color(1, 0, 39));
+        txtcantidad.setFont(new java.awt.Font("Arial Narrow", 1, 16)); // NOI18N
+        txtcantidad.setForeground(new java.awt.Color(117, 198, 173));
         txtcantidad.setText("Cantidad:");
         jPanel1.add(txtcantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 292, -1, -1));
 
         cantidad.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jPanel1.add(cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 316, 273, 39));
 
-        TransferirBtn.setBackground(new java.awt.Color(0, 0, 119));
-        TransferirBtn.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
-        TransferirBtn.setForeground(new java.awt.Color(255, 255, 255));
+        TransferirBtn.setBackground(new java.awt.Color(224, 127, 181));
+        TransferirBtn.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         TransferirBtn.setText("Completar Transferencia");
         TransferirBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         TransferirBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -117,6 +118,9 @@ public class Tansferir extends javax.swing.JFrame {
             }
         });
         jPanel1.add(TransferirBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 273, 51));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/f6.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 190, 380));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -207,6 +211,7 @@ public class Tansferir extends javax.swing.JFrame {
     private javax.swing.JButton btn1;
     private javax.swing.JTextField cantidad;
     private javax.swing.JLabel instruccion;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel txtbeneficiario;

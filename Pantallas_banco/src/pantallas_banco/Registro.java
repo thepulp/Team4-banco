@@ -54,7 +54,7 @@ public class Registro extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(159, 100, 216));
+        jPanel1.setBackground(new java.awt.Color(61, 63, 83));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -67,18 +67,16 @@ public class Registro extends javax.swing.JFrame {
         jPanel1.add(pass1, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 302, 234, 31));
 
         viewpass.setEditable(false);
-        viewpass.setBackground(new java.awt.Color(0, 0, 119));
+        viewpass.setBackground(new java.awt.Color(224, 127, 181));
         viewpass.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
-        viewpass.setForeground(new java.awt.Color(255, 255, 255));
         viewpass.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewpass.setText("Email");
         viewpass.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(viewpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 234, 31));
 
         viewpass1.setEditable(false);
-        viewpass1.setBackground(new java.awt.Color(0, 0, 119));
+        viewpass1.setBackground(new java.awt.Color(224, 127, 181));
         viewpass1.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
-        viewpass1.setForeground(new java.awt.Color(255, 255, 255));
         viewpass1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewpass1.setText("Contraseña");
         viewpass1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -100,9 +98,8 @@ public class Registro extends javax.swing.JFrame {
         jPanel1.add(JBRegistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 230, 50));
 
         viewusu.setEditable(false);
-        viewusu.setBackground(new java.awt.Color(0, 0, 119));
+        viewusu.setBackground(new java.awt.Color(224, 127, 181));
         viewusu.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
-        viewusu.setForeground(new java.awt.Color(255, 255, 255));
         viewusu.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewusu.setText("Usuario");
         viewusu.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -116,7 +113,7 @@ public class Registro extends javax.swing.JFrame {
         jPanel1.add(usuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 192, 234, 28));
 
         jLabel1.setFont(new java.awt.Font("Arial Narrow", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(1, 0, 39));
+        jLabel1.setForeground(new java.awt.Color(117, 198, 173));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Registro");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 250, 40));

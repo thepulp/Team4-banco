@@ -52,7 +52,7 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(159, 100, 216));
+        jPanel1.setBackground(new java.awt.Color(61, 63, 83));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -61,9 +61,8 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         jPanel1.add(pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 302, 234, 31));
 
         viewpass.setEditable(false);
-        viewpass.setBackground(new java.awt.Color(0, 0, 119));
+        viewpass.setBackground(new java.awt.Color(224, 127, 181));
         viewpass.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
-        viewpass.setForeground(new java.awt.Color(255, 255, 255));
         viewpass.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewpass.setText("Contraseña");
         viewpass.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -82,9 +81,8 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         jPanel1.add(btninicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 361, 230, 50));
 
         viewusu.setEditable(false);
-        viewusu.setBackground(new java.awt.Color(0, 0, 119));
+        viewusu.setBackground(new java.awt.Color(224, 127, 181));
         viewusu.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
-        viewusu.setForeground(new java.awt.Color(255, 255, 255));
         viewusu.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         viewusu.setText("Usuario");
         viewusu.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -96,7 +94,7 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
 
         crearcuenta.setBackground(new java.awt.Color(255, 255, 255));
         crearcuenta.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
-        crearcuenta.setForeground(new java.awt.Color(255, 255, 255));
+        crearcuenta.setForeground(new java.awt.Color(117, 198, 173));
         crearcuenta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         crearcuenta.setText("¿Olvidaste tu contraseña?");
         crearcuenta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -108,7 +106,7 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         jPanel1.add(crearcuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 240, 20));
 
         crearcuenta1.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
-        crearcuenta1.setForeground(new java.awt.Color(255, 255, 255));
+        crearcuenta1.setForeground(new java.awt.Color(117, 198, 173));
         crearcuenta1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         crearcuenta1.setText("Crear Cuenta");
         crearcuenta1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -132,7 +130,7 @@ public class Inicio_de_sesion extends javax.swing.JFrame {
         jPanel1.add(btncerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 30, 40));
 
         imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
-        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, -40, 380, 590));
+        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-50, -40, 380, 590));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

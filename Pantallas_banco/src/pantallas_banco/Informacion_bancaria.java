@@ -53,13 +53,17 @@ public class Informacion_bancaria extends javax.swing.JFrame {
         Identificador_tarjeta1 = new javax.swing.JLabel();
         btn1 = new javax.swing.JButton();
         Enseñar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(159, 100, 216));
+        jPanel1.setBackground(new java.awt.Color(61, 63, 83));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        contenedor1.setBackground(new java.awt.Color(240, 217, 206));
         contenedor1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         titulo_cuentas1.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
@@ -89,6 +93,10 @@ public class Informacion_bancaria extends javax.swing.JFrame {
         saldo3.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         saldo3.setText("$ 648.54");
         contenedor1.add(saldo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 52, -1));
+
+        jPanel1.add(contenedor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 84, 320, 100));
+
+        contenedor2.setBackground(new java.awt.Color(240, 217, 206));
 
         titulo_cuentas2.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
         titulo_cuentas2.setText("Tarjetas");
@@ -177,6 +185,8 @@ public class Informacion_bancaria extends javax.swing.JFrame {
                 .addGap(39, 39, 39))
         );
 
+        jPanel1.add(contenedor2, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 202, 320, -1));
+
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/atras.png"))); // NOI18N
         btn1.setBorderPainted(false);
         btn1.setContentAreaFilled(false);
@@ -186,45 +196,23 @@ public class Informacion_bancaria extends javax.swing.JFrame {
                 btn1ActionPerformed(evt);
             }
         });
+        jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 529, -1, -1));
 
-        Enseñar.setBackground(new java.awt.Color(0, 0, 119));
+        Enseñar.setBackground(new java.awt.Color(224, 127, 181));
         Enseñar.setFont(new java.awt.Font("Arial Narrow", 0, 11)); // NOI18N
-        Enseñar.setForeground(new java.awt.Color(255, 255, 255));
-        Enseñar.setText("Cuenta");
+        Enseñar.setText("Actualizar");
         Enseñar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EnseñarActionPerformed(evt);
             }
         });
+        jPanel1.add(Enseñar, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 529, 78, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(contenedor1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
-                    .addComponent(contenedor2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(btn1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Enseñar, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(74, 74, 74)
-                .addComponent(contenedor1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(contenedor2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn1)
-                    .addComponent(Enseñar)))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/f7.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 10, 350, 340));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/f7.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 490, 350, 100));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -300,6 +288,8 @@ public class Informacion_bancaria extends javax.swing.JFrame {
     private javax.swing.JLabel img_tarjeta1;
     private javax.swing.JLabel img_tarjeta2;
     private javax.swing.JLabel img_tarjeta3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel saldo1;
     private javax.swing.JLabel saldo2;

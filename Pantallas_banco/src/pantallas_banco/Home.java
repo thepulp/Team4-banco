@@ -39,13 +39,14 @@ public class Home extends javax.swing.JFrame {
         textobtn3 = new javax.swing.JLabel();
         textobtn4 = new javax.swing.JLabel();
         textobtn1 = new javax.swing.JLabel();
-        imgfondo = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(159, 100, 216));
+        jPanel1.setBackground(new java.awt.Color(61, 63, 83));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -59,9 +60,9 @@ public class Home extends javax.swing.JFrame {
                 btnsalirActionPerformed(evt);
             }
         });
-        jPanel1.add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 530, 350, -1));
+        jPanel1.add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 550, 350, -1));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 119));
+        jButton1.setBackground(new java.awt.Color(224, 127, 181));
         jButton1.setFont(new java.awt.Font("Arial Narrow", 0, 9)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/cuenta.png"))); // NOI18N
@@ -73,7 +74,7 @@ public class Home extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 150, 60));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 119));
+        jButton2.setBackground(new java.awt.Color(224, 127, 181));
         jButton2.setFont(new java.awt.Font("Arial Narrow", 0, 9)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/mas-reciente.png"))); // NOI18N
@@ -85,7 +86,7 @@ public class Home extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 150, 60));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 119));
+        jButton3.setBackground(new java.awt.Color(224, 127, 181));
         jButton3.setFont(new java.awt.Font("Arial Narrow", 0, 9)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/dinero.png"))); // NOI18N
@@ -97,7 +98,7 @@ public class Home extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 150, 60));
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 119));
+        jButton4.setBackground(new java.awt.Color(224, 127, 181));
         jButton4.setFont(new java.awt.Font("Arial Narrow", 0, 9)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/transferencia-bancaria.png"))); // NOI18N
@@ -109,28 +110,35 @@ public class Home extends javax.swing.JFrame {
         });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 150, 60));
 
-        textobtn2.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
+        textobtn2.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
+        textobtn2.setForeground(new java.awt.Color(117, 198, 173));
         textobtn2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         textobtn2.setText("Transferencias");
         jPanel1.add(textobtn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 140, 20));
 
-        textobtn3.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
+        textobtn3.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
+        textobtn3.setForeground(new java.awt.Color(117, 198, 173));
         textobtn3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         textobtn3.setText("Saldo");
         jPanel1.add(textobtn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 140, 20));
 
-        textobtn4.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
+        textobtn4.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
+        textobtn4.setForeground(new java.awt.Color(117, 198, 173));
         textobtn4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         textobtn4.setText("Actividades recientes");
         jPanel1.add(textobtn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 390, 150, 20));
 
-        textobtn1.setFont(new java.awt.Font("Arial Narrow", 1, 11)); // NOI18N
+        textobtn1.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
+        textobtn1.setForeground(new java.awt.Color(117, 198, 173));
         textobtn1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         textobtn1.setText("Informacion cuenta");
         jPanel1.add(textobtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 140, 20));
 
-        imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
-        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, -30, 380, 590));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/f4.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 490, 60, 70));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/f5.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 300, 200));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 600));
 
@@ -211,11 +219,12 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnsalir;
-    private javax.swing.JLabel imgfondo;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel textobtn1;
     private javax.swing.JLabel textobtn2;

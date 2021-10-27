@@ -43,24 +43,24 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         vardireccion = new javax.swing.JLabel();
         varnacionalidad = new javax.swing.JLabel();
         btn_regreso = new javax.swing.JButton();
-        imgfondo = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(159, 100, 216));
+        jPanel1.setBackground(new java.awt.Color(61, 63, 83));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 5, 10, 5, new java.awt.Color(0, 0, 0)));
         jPanel1.setForeground(new java.awt.Color(159, 100, 216));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        titulo.setBackground(new java.awt.Color(255, 255, 255));
         titulo.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
-        titulo.setForeground(new java.awt.Color(1, 0, 39));
+        titulo.setForeground(new java.awt.Color(117, 198, 173));
         titulo.setText("Detalles de la cuenta:");
         jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
 
-        Accion.setBackground(new java.awt.Color(0, 1, 119));
+        Accion.setBackground(new java.awt.Color(224, 127, 181));
         Accion.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
-        Accion.setForeground(new java.awt.Color(255, 255, 255));
         Accion.setText("Enseñar");
         Accion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,25 +69,37 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         });
         jPanel1.add(Accion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 310, 30));
 
-        contenedor.setBackground(new java.awt.Color(106, 46, 205));
+        contenedor.setBackground(new java.awt.Color(240, 217, 206));
         contenedor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
+        varnombre.setBackground(new java.awt.Color(255, 255, 255));
         varnombre.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
+        varnombre.setForeground(new java.awt.Color(61, 63, 83));
         varnombre.setText("Nombre:");
 
+        varfecha.setBackground(new java.awt.Color(255, 255, 255));
         varfecha.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
+        varfecha.setForeground(new java.awt.Color(61, 63, 83));
         varfecha.setText("Fecha:");
 
+        varcorreo.setBackground(new java.awt.Color(255, 255, 255));
         varcorreo.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
+        varcorreo.setForeground(new java.awt.Color(61, 63, 83));
         varcorreo.setText("Correo:");
 
+        varnumero.setBackground(new java.awt.Color(255, 255, 255));
         varnumero.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
+        varnumero.setForeground(new java.awt.Color(61, 63, 83));
         varnumero.setText("Numero:");
 
+        vardireccion.setBackground(new java.awt.Color(255, 255, 255));
         vardireccion.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
+        vardireccion.setForeground(new java.awt.Color(61, 63, 83));
         vardireccion.setText("Direccion:");
 
+        varnacionalidad.setBackground(new java.awt.Color(255, 255, 255));
         varnacionalidad.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
+        varnacionalidad.setForeground(new java.awt.Color(61, 63, 83));
         varnacionalidad.setText("Nacionalidad:");
 
         javax.swing.GroupLayout contenedorLayout = new javax.swing.GroupLayout(contenedor);
@@ -136,8 +148,8 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
         });
         jPanel1.add(btn_regreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 60, 50));
 
-        imgfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Hw1.png"))); // NOI18N
-        jPanel1.add(imgfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 50, 380, 530));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/f3.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 330, 580));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -211,7 +223,7 @@ public class Detalles_de_la_cuenta extends javax.swing.JFrame {
     private javax.swing.JButton Accion;
     private javax.swing.JButton btn_regreso;
     private javax.swing.JPanel contenedor;
-    private javax.swing.JLabel imgfondo;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel varcorreo;
